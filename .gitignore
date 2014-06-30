@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 /app/storage/
+=======
+/.idea
+/app/config/local
+>>>>>>> 7b016ab5dd25c37e225b72164e7738aa699a52b3
 /public/download/*
 /vendor
 composer

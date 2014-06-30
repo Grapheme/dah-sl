@@ -56,8 +56,8 @@ class GuestController extends BaseController {
 
 	public function sight($title){
 
-		if($page = Page::where('page_url',Request::segment(2))->where('group','sights')->first()):
-			if($sight = Sight::find($page->item_id)):
+		if($page = Page::where('page_url',Request::path())->where('group','sights')->first()):
+            if($sight = Sight::find($page->item_id)):
 				$images = self::getImagesItem('sights',$sight->id);
 				return View::make('users_interface.sight',compact('sight','page','images'));
 			endif;
@@ -143,9 +143,12 @@ class GuestController extends BaseController {
 		return View::make('users_interface.services-booking',compact('services'));
 	}
 
-    public function showActions() {    	$actions = Action::orderBy('order')->orderBy('created_at', 'DESC')->get();
-    	foreach($actions as $a => $action) {            $images = self::getImagesItem('actions', $action->id);
-            if (!is_object($images->first())) {            	## Не отображать акции без картинки
+    public function showActions() {
+    	$actions = Action::orderBy('order')->orderBy('created_at', 'DESC')->get();
+    	foreach($actions as $a => $action) {
+            $images = self::getImagesItem('actions', $action->id);
+            if (!is_object($images->first())) {
+            	## пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                 unset($actions[$a]);
                 #continue;
             } else {

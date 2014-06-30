@@ -145,7 +145,7 @@
 			<ul class="sights-list">
 			@foreach($sights AS $sight)
 				<li class="sight-item">
-					<a class="sight-item-link" href="{{(!empty($sight->description))?url('sights/'.$sight->page_url):'#'}}"></a>
+					<a class="sight-item-link" href="{{(!empty($sight->description))?url($sight->page_url):'#'}}"></a>
 					<div class="sight-item-cont">
 						<div class="sight-pict">
 							{{HTML::image($sight->photo)}}

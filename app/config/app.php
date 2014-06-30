@@ -2,12 +2,12 @@
 
 return array(
 	
-	'use_typekit' => true,
-	'use_analyrics' => true,
-	'use_googleapis' => true,
+	'use_typekit' => TRUE,
+	'use_analyrics' => TRUE,
+	'use_googleapis' => TRUE,
 	'default_meta' => 'Даховская слобода',
-	
-	'debug' => false,
+
+	'debug' => FALSE,
 	'url' => 'http://dah-sl.ru/',
 	'timezone' => 'UTC',
 	'locale' => 'en',
@@ -47,7 +47,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
-		'Intervention\Image\ImageServiceProvider'
+		'Intervention\Image\ImageServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 	),
 	'manifest' => storage_path().'/meta',
 	'aliases' => array(
