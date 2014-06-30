@@ -39,7 +39,7 @@
 			&copy; Туристический комплекс «Даховская слобода»
 		</div>
 		<div class="dev">
-			Разработано агентством «<a target="_blank" href="http://grapheme.ru">Графема</a>», 2013 - {{date("Y")}}
+			Разработано агентством «<a target="_blank" href="http://grapheme.ru/">Графема</a>», 2013 - {{date("Y")}}
 		</div>
 	</div>
 </footer>
