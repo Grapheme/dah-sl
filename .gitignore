@@ -1,5 +1,6 @@
-#/app/storage/
+/app/storage/
 /public/download/*
 /vendor
 composer
 composer.lock
+.htaccess
