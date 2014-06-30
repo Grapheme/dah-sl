@@ -1,4 +1,5 @@
 /app/storage/
+/.idea
 /app/config/local
 /public/download/*
 /vendor
