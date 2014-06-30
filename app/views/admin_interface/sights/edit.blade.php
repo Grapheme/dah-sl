@@ -36,7 +36,7 @@
 </div>
 <div class="form-group">
 	{{ Form::submit('Сохранить',array('class'=>'btn btn-default')) }}
-	{{ link_to_route('control-panel.services.show','Отмена',$sight->id,array('class'=>'btn')) }}
+	{{ link_to_route('control-panel.sights.show','Отмена',$sight->id,array('class'=>'btn')) }}
 </div>
 {{ Form::close() }}
 @stop
