@@ -20,11 +20,11 @@ class SightsController extends BaseController {
 	}
 
 	public function store(){
-		
+
 		$validation = Validator::make(Input::all(),Sight::$rules);
 		if($validation->passes()):
-			self::saveSights();
-			self::saveSeoData($this->sight->id,'sights');
+            $sightID = self::saveSights();
+			self::saveSeoData($sightID,'sights');
 			return Redirect::route('control-panel.sights.index');
 		endif;
 		return Redirect::route('control-panel.sights.create')->withInput()->withErrors($validation);
