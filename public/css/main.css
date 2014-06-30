@@ -1,0 +1,1456 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+.valentine .facilities-header { min-height: 1.5em; margin: 1em 0 0; font: 1.5em 'jaf-zalamander',serif; text-align: left; }
+.valentine > p { margin: 0 0 1em; text-align: center; }
+.valentine_logo { width: 100%; }
+.fotorama__html > div {
+    height: 100%;
+    width: 100%;
+}
+section.index-slideshow.valentine-slide {
+	margin: 1em 0 2em;
+}
+.fotorama__html a {
+	display: block;
+    height: 100%;
+    width: 100%;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html { font: 100% 'pt-serif', serif; color: #6C4742; }
+body { background: url(../img/texture.gif);
+	-moz-box-shadow: 0 0 0 17px #FFF inset;
+	-webkit-box-shadow: 0 0 0 17px #FFF inset;
+	box-shadow: 0 0 0 17px #FFF inset;
+}
+.wrapper { width: 96%; max-width: 1146px; min-width: 320px; margin: 0 auto; padding: 34px 2% 2%; }
+.site-link { color: #6C4742; }
+.site-link:hover { text-decoration: none; }
+	header { height: 270px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+	.logo { position: absolute; top: -45%; left: 0; width: 206px; height: 229px; margin: 0.67em 0; text-indent: -9999px; background: url(../img/sloboda_sprite.png) no-repeat; font-size: 2em; }
+	.htg-there { float: left; margin: -5px 10px 0 18px; padding: 5px 0 5px 40px; background: url(../img/sloboda_sprite.png) -422px 0 no-repeat; }
+	.htg-there.payment-link { background-position: 0 -517px; }
+		.htg-there-link { font-style: italic; color: #6C4742; text-decoration: none; border-bottom: 1px solid #6C4742; }
+		.htg-there-link:hover { border-color: #00A2BF; color: #00A2BF; }
+	.contact-nums { position: relative; margin: 0 28px 0 0; float: right; }
+		.tel-sign { position: absolute; right: 105%; font-style: italic; white-space: nowrap; }
+		.telephone-link { display: block; width: 129px; color: #6C4742; text-decoration: none; font-style: normal; }
+	#mobile-trigger { display: none; position: absolute; top: 3px; z-index: 1; width: 50px; height: 50px; background: url(../img/sloboda_sprite.png) -56px -247px; cursor: pointer; }
+	#mobile-trigger:hover { background-position: -110px -247px; }
+	#mobile-trigger.active-mobile-trigger { background-position: -158px -248px; }
+	#mobile-trigger.active-mobile-trigger:hover { background-position: -159px -292px }
+	.book-sign { position: absolute; width: 184px; right: 0; font-size: 14px; }
+/*----------------------------------Transitions------------------------------- */
+.nav-item-icon,
+.nav-item-desc,
+.htg-there-link,
+.contacts-link,
+.booking-form .form-submit,
+.room .reserve,
+.contacts address .site-link,
+.services-section .offers-item-cont,
+.styled-list-item a,
+.room-link,
+.radio-sign,
+.sight-capt,
+.page-desc-link,
+.room-price,
+.room-price .bottom-angle,
+.room-price .top-angle,
+.room-price .shadow-angle {
+	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+}
+.sights-page .sight-item,
+.jcarousel li .sight-item-cont,
+.dev > a,
+input,
+textarea,
+.sbOptions li a,
+.styled-link,
+.shadow,
+.review-form-container .request-mail,
+.weather-header,
+.room-price.flag a,
+.typical-link {
+	transition: all .15s ease;
+	-webkit-transition: all .15s ease;
+	-moz-transition: all .15s ease;
+	-o-transition: all .15s ease;
+	-ms-transition: all .15s ease;
+}
+/*----------------------------------Navigation------------------------------- */
+nav { clear: both; padding: 40px 0 0; }
+.nav-list { position: relative; margin: 0; padding: 0; text-align: center; }
+.nav-item { position: relative; width: 12%; outline: none; }
+.nav-link { display: block; text-align: center; text-decoration: none; }
+.nav-item.main-logo { position: absolute; left: 50%; display: inline-block; width: 206px; height: 229px; margin-left: -103px; }
+.nav-item.left-item { float: left; }
+.nav-item.right-item { float: right; }
+.nav-item-icon { display: block; margin: 0 auto; width: 35px; height: 35px; background-image: url(../img/sloboda_sprite.png); background-repeat: no-repeat; }
+
+.nav-item-icon { opacity: .5; }
+.nav-item.about .nav-item-icon { background-position: -213px 0; }
+.nav-item:hover .nav-item-icon,
+.mobile-active-nav-item .nav-item-icon { opacity: 1; }
+.mobile-active-nav-item a { cursor: default; }
+.nav-item.services { width: 11.5%; }
+.nav-item.services .nav-item-icon { background-position: -250px 0; }
+.nav-item.numbers { width: 9.4%; }
+.nav-item.numbers .nav-item-icon { background-position: -284px 0; }
+.nav-item.reviews .nav-item-icon { background-position: -318px 0; }
+.nav-item.what-to-see .nav-item-icon { background-position: -353px 0; }
+.nav-item.about { width: 13.6%; }
+.nav-item.cafe { width: 10%; }
+.nav-item.reviews { width: 12.8%; }
+.nav-item.what-to-see { width: 15%; }
+.nav-item.cafe .nav-item-icon { background-position: -387px 0; }
+.nav-item-desc { display: block; margin: 17px 0 0; font: 14px 'intro-bold', sans-serif; text-transform: uppercase; color: #6C4742; white-space: nowrap; }
+.nav-item:hover .nav-item-desc,
+.mobile-active-nav-item .nav-item-desc { color: #00A2BF; }
+.nav-item.active-nav-item,
+.nav-item.active-nav-item .nav-link { cursor: default; }
+.nav-item.active-nav-item:after {
+    content: " ";
+    position: absolute;
+    left: 12.5%;
+    bottom: -12px;
+    width: 75%;
+    height: 5px;
+    background: url("../img/wave.png") repeat-x;
+}
+.nav-item.active-nav-item .nav-item-icon { opacity: 1; }
+.nav-item.active-nav-item .nav-item-desc { color: #00A2BF; }
+/*-------------------------------Index slideshow------------------------------ */
+.mobile-nav { display: none; }
+
+/*-------------------------------Index slideshow------------------------------ */
+.index-slideshow { min-height: 200px; margin: 0 28px; padding: 20px; background: #fff; overflow: hidden; }
+section > .index-slideshow { margin: 0; }
+/*-------------------------------Fotorama styles------------------------------ */
+.fotorama__nav-wrap { position: absolute; bottom: 15px; }
+.fotorama__nav--dots .fotorama__nav__frame { width: auto; }
+.fotorama__dot { width: 17px; height: 18px; margin: 0 5px; border: none; background: url(../img/sloboda_sprite.png) -234px -70px no-repeat; }
+.fotorama__nav__frame.fotorama__active .fotorama__dot { width: 17px; height: 17px; margin: 0 6px; background: url(../img/sloboda_sprite.png) -214px -70px no-repeat; }
+.fotorama__arr { width: 36px; height: 50px; }
+.fotorama__arr--prev { margin-left: 18px; background: url(../img/sloboda_sprite.png) -205px -87px no-repeat; }
+.fotorama__arr--prev:hover { background-position: -344px -401px; }
+.fotorama__arr--next { margin-right: 18px; background: url(../img/sloboda_sprite.png) -241px -87px no-repeat; }
+.fotorama__arr--next:hover { background-position: -380px -401px }
+/*-------------------------------Section offers------------------------------- */
+
+section.offers { margin: 65px 0 0; }
+.offers-list { max-width: 980px; margin: 0 auto; padding: 0; list-style-type: none; text-align: left; }
+.offers-item { position: relative; display: inline-block; width: 313px; height: 350px; margin: 0 10px 10px 0; text-align: center; vertical-align: top; cursor: pointer; }
+
+.index-banner-link { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.offers-item-cont .request-mail { padding: 40% 0; }
+.offers-item.booking { width: 239px; height: 286px; padding: 32px 37px; }
+.form-header-dec { display: block; width: 35px; height: 35px; margin: 0 auto; background: url("../img/sloboda_sprite.png") no-repeat scroll -420px -31px; }
+.form-header-dec.left-dec { float: left; }
+.form-header-dec.right-dec { float: right; }
+.form-header-cont { display: block; width: 168px; margin: 0 auto; overflow: hidden; }
+.form-header { height: 30px; font: 23px 'jaf-zalamander'; letter-spacing: 2px; text-transform: uppercase; }
+.offers-bg { position: absolute; width: 100%; height: 100%; opacity: .9; }
+.offers-cont { position: relative; color: #fff; }
+.top-line { width: 60px; margin: 0 auto 10px; padding-top: 77px; border-bottom: 1px solid #fff; }
+.bottom-line { width: 60px; margin: 16px auto 32px; border-bottom: 1px solid #fff; }
+
+.offers-header { margin: 0; font: italic 2.25em/1.1em 'pt-serif', serif; }
+.offers-link { position: relative; display: block; width: 100px; margin: 0 auto; padding: 8px 10px; background: #FFF; font: 14px/14px 'intro-bold',sans-serif; color: #6C4742; text-transform: uppercase; text-decoration: none; }
+
+.offers-link .dec-arrow { position: absolute; top: 0; left: -14px; width: 15px; height: 30px; background: url("../img/sloboda_sprite.png") no-repeat scroll -284px -224px; }
+.offers-item:hover .offers-link { background: #e0c59b; }
+.offers-item:hover .offers-link .dec-arrow { background-position: -301px -224px; }
+.offers-item:hover .offers-item-cont { opacity: 1; }
+.full-link { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.wo-line-link-container { position: absolute; bottom: 24px; left: 0; width: 100%; }
+.offers-link.wo-line-link { display: inline-block; width: auto; min-width: 100px; line-height: 14px; }
+
+.booking { background: rgba(230, 211, 177, .5); }
+.booking-form input { width: 227px; height: 43px; margin: 18px 0 0; }
+.booking-form .form-text::-webkit-input-placeholder { font-family: 'pt-serif', serif; color: #6C4742; }
+.booking-form .form-text:-moz-placeholder { font-family: 'pt-serif', serif; color: #6C4742; }
+.booking-form .form-text::-moz-placeholder { font-family: 'pt-serif', serif; color: #6C4742; }
+.booking-form .form-text:-ms-input-placeholder { font-family: 'pt-serif', serif; color: #6C4742; }
+.booking-form select { margin: 25px 0 0; }
+.booking-form .form-submit,
+.room .reserve,
+.single-service .reserve,
+.booking-main-form .form-submit { outline: none; width: 239px; height: 46px; border: none; margin: 18px auto 0; background: url(../img/sloboda_sprite.png) -212px -307px no-repeat; }
+.reserve {display: block;text-decoration: none;}
+.booking-form .form-submit:hover,
+.room .reserve:hover,
+.booking-main-form .form-submit:hover { opacity: .8 }
+.booking-form .form-text { padding: 0 10px; border: 1px solid #bcb1a7; font-family: 'pt-serif', serif; color: #6C4742; }
+
+/*-------------------------------Section booking------------------------------- */
+.booking-section { max-width: 980px; margin: 0 auto; background-color: rgba(230, 211, 177, .5); }
+.booking-section .waves { max-width: 666px; margin: 0 auto; padding: 2.5em 0; border-bottom: 2px groove #FFF3E5; background: none; }
+.booking-section .waves h1 { position: relative; background: none; z-index: 5; font-size: 3em; letter-spacing: 10px; }
+.booking-section .waves h1:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 20%;
+	height: 100%;
+	background: url(../img/wave.png) repeat-x 0 center;
+}
+.booking-section .waves h1:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 20%;
+	height: 100%;
+	background: url(../img/wave.png) repeat-x 0 center;
+}
+.booking-main-form { max-width: 666px; margin: 0 auto; padding: 0 0 .5em; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+.booking-main-form .percent-lbl { width: 50%; }
+.booking-main-form .percent-input { width: 46.5%; }
+.booking-main-form .Zebra_DatePicker_Icon_Wrapper { width: 50%; }
+.booking-main-form .Zebra_DatePicker_Icon_Wrapper .percent-input { width: 97%; }
+.booking-main-form .form-elem { margin: 1em 0; }
+.booking-main-form .booking-dates,
+.booking-main-form .booking-quantities,
+.booking-main-form .booking-desired-num,
+.booking-main-form .booking-name { border-bottom: 2px groove #FFF3E5; }
+.booking-radio-cont { float: right; width: 50%; }
+.booking-radio-cont .desired-num-label { position: relative; float: left; clear: left; cursor: pointer; }
+.booking-radio-cont .desired-num-label:after {
+	content:"";
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: -13px;
+	background: url(../img/man.png) repeat-x 0 center;
+}
+.booking-main-error { margin: 2.5em 0 .5em; color: #b15152; }
+.error .form-error,
+input.error + .form-error { display: block; }
+
+.error input, .error textarea { background: #edb199; }
+.error #hover-test { background: #edb199; }
+.error .sbHolder { background: #edb199; }
+.error .sbToggle { background-color: #fff; }
+
+.review-form .form-error,
+.booking-form .form-error,
+.booking-main-form .form-error {
+	position: absolute;
+	font-size: .9em;
+	margin: 0;
+	float: none;
+	display: none;
+}
+.form-error,
+.form-error { display: none; float: left; margin-left: 50%; color: #b15152; }
+.review-form .form-error { margin-left: 25.5%; }
+.booking-radio-cont .desired-num-label.standart-places-2 { padding: 0 26px 0 0; }
+.booking-radio-cont .desired-num-label.standart-places-2:after {
+	width: 26px;
+}
+.booking-radio-cont .desired-num-label.econom-places-4 { padding: 0 52px 0 0; }
+.booking-radio-cont .desired-num-label.econom-places-4:after {
+	width: 52px;
+}
+.booking-radio-cont .desired-num-label.improved-places-2 { padding: 0 26px 0 0; }
+.booking-radio-cont .desired-num-label.improved-places-2:after {
+	width: 26px;
+}
+.booking-radio-cont .desired-num-label.family-places-3 { padding: 0 39px 0 0; }
+.booking-radio-cont .desired-num-label.family-places-3:after {
+	width: 39px;
+}
+.booking-radio-cont .desired-num-label.family-places-4 { padding: 0 52px 0 0; }
+.booking-radio-cont .desired-num-label.family-places-4:after {
+	width: 52px;
+}
+
+.desired-num-label > input { margin: 1em; }
+.radio-sign { border-bottom: 1px dashed #6C4742; }
+.desired-num-label:hover .radio-sign { border-color: #00A2BF; color: #00A2BF; }
+.booking-main-form .form-submit { display: block; margin: 1em auto; }
+/*-------------------------------Styled select-------------------------------- */
+
+.sbHolder { position: relative; width: 246px; height: 45px; margin: 18px 0 0; border: 1px solid #BCB1A7; background: #FFF; }
+.booking-section .form-input-element .sbHolder { float: right; width: 49.5%; margin: 0; }
+.booking-desired-num .form-input-element { margin: 1em 0; }
+.form-input-element .sbHolder .sbToggle { width: 44px; }
+.sbHolder a { text-decoration: none; color: #6C4742; }
+.sbHolder a:hover { color: #00A2BF; }
+.sbSelector { display: block; height: 100%; padding: 0 10px; line-height: 2.6em; text-align: left; }
+.sbToggle { position: absolute; top: 0; right: 0; display: block; width: 18%; height: 100%; border-left: 1px solid #BCB1A7; background: url("../img/sloboda_sprite.png") -383px -81px no-repeat;  }
+.sbToggle:hover { background-position: -98px -296px; }
+.sbOptions { overflow-y: auto; position: absolute; z-index: 5; display: block; width: 225px; max-height: none !important; margin: 1px; padding: 0 10px; background: #FFF;  list-style: none outside none; text-align: left; }
+.sbOptions > li { padding: 10px 0; }
+/*-------------------------------Section sights------------------------------- */
+
+section.sights { margin: 70px 0 0; }
+.waves { margin: 0 3%; background: url(../img/wave.gif) 0 center repeat-x; text-align: center; }
+.waves h1, .waves h2 { display: inline-block; width: 72%; margin: 0; padding-left: 25px; font: 56px 'jaf-zalamander', serif; background: url("../img/texture.gif"); text-transform: uppercase; letter-spacing: 28px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+.left-wave,
+.right-wave { display: none; width: 120px; height: 15px; background: url("../img/wave.png") repeat-x; }
+
+.sight-pict { width: 294px; height: 208px; }
+.sight-pict > img { width: 100%; height: 100%; }
+.sight-capt { padding: 17px 0 10px; font: 14px 'intro-bold', sans-serif; text-transform: uppercase; color: #6C4742; text-align: center; }
+/*-------------------------------Section facilities---------------------------- */
+
+section.facilities { margin: 128px 0 0; padding: 0 5%; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);}
+.facilities-header { font: 2em 'jaf-zalamander', serif; margin: 0; text-transform: uppercase; text-align: center; }
+.facilities-desc { margin: 0 3%; font-size: 1em; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+.sloboda-column { float: left; width: 48%; }
+.sloboda-column.left-column { margin: 0 2% 0 0; }
+.sloboda-column.right-column { margin: 0 0 0 2%; }
+/*-------------------------------Section facilities---------------------------- */
+
+footer { margin: 5.5em 0 0; border-top: 2px groove #FFF3E5; text-align: center; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
+.footer-tel { text-decoration: none; color: #6C463F; }
+.about-footer { margin: 2.5em 10px 0; }
+.footer-addr > address { position: relative; top: -0.7em; width: 366px; margin: 0 auto; padding: 0 10px; background: url("../img/texture.gif"); font: normal 22px 'jaf-zalamander', serif; }
+.dest { margin: 0 0 0.2em; }
+footer > .social { margin: 15px 0 0; font: 10px 'intro-bold', sans-serif; text-transform: uppercase; }
+.social-links-list { width: /*225px */180px; margin: 20px auto; padding: 0; list-style: none; }
+.social-links-item { float: left; width: 40px; height: 40px; margin: 0 5px 0 0; background-image: url(../img/sloboda_sprite.png); background-repeat: no-repeat; }
+.social-links-item > a { display: block; height: 100%; }
+.social-links-item.facebook { background-position: -214px -143px; }
+.social-links-item.facebook:hover { background-position: -214px -183px; }
+.social-links-item.instagram { background-position: -262px -143px; }
+.social-links-item.instagram:hover { background-position: -262px -183px; }
+.social-links-item.twitter { background-position: -310px -143px; }
+.social-links-item.twitter:hover { background-position: -310px -183px; }
+.social-links-item.vk { background-position: -358px -143px; }
+.social-links-item.vk:hover { background-position: -358px -183px; }
+.social-links-item.odnokl { background-position: -406px -143px; }
+.social-links-item.odnokl:hover { background-position: -406px -183px; }
+.contacts-link { border-bottom: 1px solid #6C4742; font: 13px 'intro-bold', sans-serif; text-transform: uppercase; color: #6C4742; text-decoration: none; }
+.contacts-link:hover { border-color: #00A2BF; color: #00A2BF; }
+.copyright { font-size: 14px; margin: 20px 0 0; }
+.dev { margin: 0.4em 0 0.2em; }
+.dev > a { display: inline-block; height: 18px; color: #6C4742; text-decoration: none; border-bottom: 1px solid rgba(108, 71, 66, .5); }
+.dev > a:hover { color: #00A2BF; border-color: transparent; }
+/*-------------------------------Section services---------------------------- */
+
+.services-section .waves { margin: 0 13px 2.5em 0; }
+.contacts .waves { margin-bottom: 2.5em; }
+.contacts .waves,
+.facilities-desc { max-width: 980px; margin: 0 auto 2.5em; }
+.services-section .offers-item-cont { opacity: 0; padding-top: 5.5em; }
+/*-------------------------------Section weddings---------------------------- */
+
+.weddings { max-width: 980px; margin: 0 auto; }
+.weddings .waves { margin-top: 2.5em; }
+.page-description { margin: 1.25em 0; font-size: 1.5em; text-align: center; }
+.page-description .page-desc-link { color: #6c4742; }
+.page-description .page-desc-link:hover { color:#00A2BF; }
+.page-description .desc-tel-link { text-decoration: none; color: #6c4742; }
+.facilities.wedding-facilities { margin: 55px 0 0; }
+.facilities.wedding-facilities .facilities-header,
+.restaurant .facilities-header,
+.roomlist .facilities-header,
+.room .facilities-header { font: 1.5em 'jaf-zalamander',serif; text-align: left; }
+.restaurant .facilities-header,
+.roomlist .facilities-header,
+.room .facilities-header { min-height: 2.5em; }
+
+.styled-list { margin: 20px 0 0; padding: 0 0 0 20px; list-style: none outside none; }
+.styled-list-item:before {
+	content: '♦';
+	width: 20px;
+	position: absolute;
+	top: 3px;
+	left: -20px;
+	color: #d39a4b;
+	font-size: 10px;
+}
+.payment .sloboda-column .styled-link { text-transform: none; }
+.styled-list-item { position: relative; margin: 0 0 10px 0; }
+
+.typical-link,
+.styled-list-item a,
+.contacts-end .styled-link,
+.payment .sloboda-column .styled-link { color: #6C4742; }
+.contacts-end .styled-link { border-bottom: 1px solid #6C4742; }
+.page-description .styled-link { color: #6C4742; text-transform: none; text-decoration: none; }
+.page-description .styled-link:hover { color: #00A2BF; border-color: #00A2BF; }
+.styled-list-item a:hover,
+.contacts-end .styled-link:hover,
+.payment .sloboda-column .styled-link:hover,
+.typical-link:hover { color: #00A2BF; }
+.data-label { font-style: italic; }
+
+.payment-columns .sloboda-column { width: 31.3%; margin: 0 1%; }
+.payment-columns label { display: block; margin: 0.5em 0; white-space: nowrap; }
+.payment-columns input { margin: 0 5px 0 0; }
+.payment-columns h2 { margin: 0 0 16px; font-size: 1.6em; }
+
+/*-------------------------------Section billiards------------------------------- */
+
+.billiards,
+.services-section { max-width: 980px; margin: 0 auto 0; }
+.billiards .waves { margin: 2em 0 0; }
+.billiards .sloboda-column.left-column { width: 64%; margin: 0 2% 0 0; }
+.billiards .sloboda-column.right-column { width: 31%; margin: 0 0 0 2%; }
+.billiards .sloboda-column.right-column p { font-style: italic; }
+.big-zalamander { font: normal 2.25em 'jaf-zalamander', serif; }
+.single-wave { width: 60%; height: 5px; background: url(../img/wave.png) repeat-x; }
+
+.single-service .sloboda-column.right-column { width: 25%; margin: 0 0 0 8%; }
+.single-service .sloboda-column.half-column.right-column { width: 48%; margin: 0 0 0 2%; }
+.single-service .sloboda-column.half-column.left-column { width: 48%; margin: 0 2% 0 0; }
+.single-service .single-wave { width: 78%; height: 5px; background: url("../img/wave.png") repeat-x scroll 0 0; }
+
+/*-------------------------------Section restaurant------------------------------- */
+
+.restaurant { max-width: 950px; margin: 0 auto; }
+.restaurant .facilities-desc { margin: 2.5em 3% 0; }
+.pdf-link { float: left; width: 210px; }
+.restaurant .pdf-link img { float: left; }
+.restaurant .bg-link { color: #6C4742; text-decoration: none; }
+.restaurant .pdf-link .bg-link:hover .styled-link { text-decoration: none; }
+.restaurant .link-container { display: block; height: 100%; margin: 0 0 0 80px; padding: 2.5em; text-decoration: none; }
+.styled-link { text-transform: uppercase; text-decoration: underline; }
+.restaurant .facilities-desc .page-description:first-child { margin-top: 0; }
+/*---------------------------------Section events--------------------------------- */
+
+.header-wo-waves { font: 56px 'jaf-zalamander'; text-align: center; }
+
+.event { max-width: 980px; margin: 0 auto; }
+.event .waves { margin: 0 3% 2.5em; }
+/*-------------------------------Section room-list-------------------------------- */
+
+.roomlist { max-width: 980px; margin: 0 auto; }
+.room-list { margin: 0 3%; padding: 0; list-style: none; }
+.roomlist .waves { margin: 0 3% 2em; }
+.room-item { margin: 0 0 4em; padding: 25px; background: #fff; }
+
+.room-link { position: relative; top: -6px; display: block; min-height: 31px; line-height: 1.3em; color: #6C4742; text-decoration: none; font-size: 32px; }
+.room-link:hover { color: #00A2BF; }
+.room-imglink { position: absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%; }
+.comfort-list { margin: 0; padding: 0; list-style: none; }
+.comfort-item { opacity: .4; float: left; width: 40px; height: 40px; margin: 0 15px 0 0; background: url(../img/sloboda_sprite.png); background-repeat: no-repeat; cursor: pointer; }
+.comfort-item:hover { opacity: .6; }
+.comfort-item.split { background-position: -22px -354px; }
+.comfort-item.comod { width: 47px; background-position: -62px -354px; }
+.comfort-item.refr { width: 27px; background-position: -109px -354px; }
+.comfort-item.towel { width: 31px; background-position: -139px -354px; }
+.comfort-item.shower { width: 23px; background-position: -406px -354px; }
+.comfort-item.double-towel { width: 56px; background-position: -351px -354px; }
+.comfort-item.teapot { width: 28px; background-position: -249px -354px; }
+.comfort-item.tv { width: 32px; background-position: -214px -354px; }
+.comfort-item.mugset { width: 33px; background-position: -284px -354px; }
+.comfort-item.glassset { width: 34px; background-position: -317px -354px; }
+.comfort-item.dryer { width: 42px; background-position: -169px -354px; }
+
+.comfort-list { position: absolute; left: 0; bottom: 0; margin: 0; padding: 0; list-style: none; }
+.room-item-left { position: relative; float: left; width: 49%; margin: 0 1% 0 0; }
+.room-item-left > img { width: 100%; height: 100%; }
+.room-pict-capt { position: absolute; top: 50%; left: 50%; width: 65px; height: 64px; margin: -52px 0 0 -52px; padding: 25px; border: 1px solid #FFF; font-size: 1.5em; line-height: 1.6em; text-align: center; color: #FFF;
+    -moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-khtml-border-radius: 100px;
+	border-radius: 100px;
+}
+.family-room .room-pict-capt { width: 93px; padding: 25px 7px 25px 13px; }
+.capt-num { display: block; font-size: 2.33333em; }
+.room-type { margin: 0 0 0.15em; line-height: 1em; text-transform: uppercase; }
+.room-desc { padding: 0 0 4em; font-size: 1em; }
+.room-item-right { position: relative; width: 49%; height: 281px; min-height: 241px; margin: 0 0 0 51%; }
+.room-order { margin: 0 0 0.5em; }
+.room-price { position: absolute; top: 0; right: -34px; height: 43px; line-height: 46px; padding: 2px 22px 1px; background: #E1C69C; cursor: pointer }
+.room-price:hover { background: #00A2BF; }
+.room-price:hover .top-angle { border-color: transparent #00A2BF transparent transparent; }
+.room-price:hover .bottom-angle { border-color: transparent transparent #00A2BF transparent; }
+.room-price:hover .shadow-angle { border-color: #00779E transparent transparent transparent; }
+.room-price.flag .reserve { color: #6C463F; }
+.room-price.flag:hover .reserve { color: #fff; }
+.triangle { width: 0px; height: 0px; border-style: solid; -webkit-transform:rotate(360deg); }
+.top-angle { position: absolute; top: 0; left: -12px; border-width: 0 12px 22px 0; border-color: transparent #e1c69c transparent transparent; }
+.bottom-angle { position: absolute; top: 24px; left: -12px; border-width: 0 0 22px 12px; border-color: transparent transparent #e1c69c transparent; }
+.shadow-angle { position: absolute; right: 0; bottom: -8px; border-width: 9px 9px 0 0; border-color: #c58c44 transparent transparent transparent; }
+
+.roomlist .sloboda-column,
+.contacts .sloboda-column,
+.room .sloboda-column { width: 31.3%; margin: 0 1%; }
+.roomlist .styled-list { margin: 0; }
+
+.ribbon-body { position: relative; margin: 4em auto 0; width: 580px; background: #D39A4B; z-index: 3; }
+.ribbon-inner { position: relative; height: 62px; padding: 6px; font: 1.5em 'jaf-zalamander', serif; color: #fff; text-align: center; background: #D39A4B; z-index: 2; text-shadow: none; }
+.ribbon-inner-content { border: 1px solid #e0b881; }
+.ribbon-inner-content:before {
+	content: "";
+	opacity: 0.4;
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 15%;
+	height: 14px;
+	margin: -7px 0 0;
+    background: url("../img/light-wave.png");
+}
+.ribbon-inner-content:after {
+	content: "";
+	opacity: 0.4;
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	width: 15%;
+	height: 14px;
+	margin: -7px 0 0;
+    background: url("../img/light-wave.png");
+}
+.subflag { position: absolute; top: 17px; width: 52px; height: 100%; background: #c58c44; }
+
+.left-subflag { left: -31px; }
+.left-subflag .top-angle { top: 0; left: -21px; border-width: 0 22px 37px 0; border-color: transparent #c58c44 transparent transparent; }
+.left-subflag .bottom-angle { top: 37px; left: -21px; border-width: 0 0 37px 22px; border-color: transparent transparent #c58c44 transparent; }
+.left-subflag .shadow-angle { bottom: 0; border-width: 0 21px 17px 0; border-color: transparent #ad7135 transparent transparent; }
+.left-subflag .top-dec-line { position: absolute; top: 6px; left: -17px; z-index: 5; width: 48px; border-bottom: 1px solid #D7AF7C; }
+.left-subflag .bot-dec-line { position: absolute; bottom: 6px; left: -17px; z-index: 5; width: 61px; border-bottom: 1px solid #D7AF7C; }
+
+.right-subflag { right: -31px; }
+.right-subflag .top-dec-line { position: absolute; top: 6px; right: -17px; z-index: 5; width: 48px; border-bottom: 1px solid #D7AF7C; }
+.right-subflag .bot-dec-line { position: absolute; bottom: 6px; left: 8px; z-index: 5; width: 61px; border-bottom: 1px solid #D7AF7C; }
+.right-subflag .top-angle { top: 0; left: auto; right: -21px; border-width: 37px 22px 0 0; border-color: #c58c44 transparent transparent transparent; }
+.right-subflag .bottom-angle { top: 37px; left: auto; right: -21px; border-width: 37px 0 0 22px; border-color: transparent transparent transparent #c58c44; }
+.right-subflag .shadow-angle { bottom: 0; left: 0; right: auto; border-width: 17px 21px 0 0; border-color: #ad7135 transparent transparent transparent; }
+/*-------------------------------Section room-list-------------------------------- */
+
+.about-complex { text-align: center; }
+.image-map { display: inline-block; position: relative; margin: 4em auto 2em; }
+.image-map > img { width: 100%; }
+.hotspots { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.hotspots .spot-link { position: absolute; padding: 7px 8px 5px; background: #fff; font: .85em/.8em 'intro-bold', sans-serif; color: #6c463f; text-transform: uppercase; text-decoration: none;
+	transition: all .8s ease;
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+}
+.hotspots .spot-link:hover { color: #fff; background: #00a2bf; }
+
+.small-pond-spot.spot-link { top: 40.9%; left: 56.3%; }
+.bath-spot.spot-link { top: 8.2%; left: 56.4%; }
+.housing-2-spot.spot-link { top: 19.4%; left: 61.7%; }
+.mangal-1-spot.spot-link { top: 19.2%; left: 78.5%; }
+.entry-spot.spot-link { top: 30.8%; left: 29.5%; }
+.parking-spot.spot-link { top: 33.8%; left: 41.9%; }
+.housing-3-spot.spot-link { top: 40%; left: 27.1%; }
+.swing-spot.spot-link { top: 76.5%; left: 65.4%; }
+.restaurant-spot.spot-link { top: 51.2%; left: 75%; }
+.administratin-spot.spot-link { top: 53.5%; left: 75%; }
+.trainers-spot.spot-link { top: 55.9%; left: 20.3%; }
+.mangal-2-spot.spot-link { top: 61.8%; left: 61.5%; }
+.pond-spot.spot-link { top: 67%; left: 49%; }
+.playground-spot.spot-link { top: 73.5%; left: 13%; }
+.pool-spot.spot-link { top: 79.8%; left: 27%; }
+.housing-1-spot.spot-link { top: 82.6%; left: 50.2%; }
+.zoo-spot.spot-link { top: 59.1%; left: 74.5%; }
+.serv-spot.spot-link { top: 29%; left: 73%; }
+/*-------------------------------Section contacts-------------------------------- */
+
+.payment .page-description { font-size: 1em; }
+.payment .facilities-desc { max-width: 666px; padding: 2% 0 7%; font-size: 0.8em; }
+.facilities-desc.payment-columns { margin-bottom: 2em; padding-bottom: 0; }
+.payment .facilities-desc h2 { text-align: left; text-transform: none; }
+.booking-main-form.payment-form .percent-input { position: relative; z-index: 1; width: 202px; }
+.booking-main-form .form-submit.payment-ok { position: relative; z-index: 1; float: left; width: 92px; background-position: -109px -467px; margin: -4px 0 0 5px; }
+.booking-main-form.pay-form .booking-quantities { border: none; }
+.pay-form-container { display: none;}
+.payment-form .form-error { position: relative; top: -4px; width: 175px; }
+.pay-form .percent-lbl { line-height: 1.5em; }
+.percent-lbl.head-percent-lbl { line-height: 2em; }
+.pay-number { padding: 1.3em 0 .8em;; font: 14px 'intro-bold',sans-serif; text-align: center; text-transform: uppercase; }
+.booking-main-form.pay-form .payment-submit { padding: 1.5em 0; border-top: 2px groove #FFF3E5; border-bottom: 2px groove #FFF3E5; }
+.booking-main-form.pay-form .payment-submit .form-elem { margin: 0; }
+.booking-main-form.pay-form .payment-submit .form-submit.payment-go { height: 48px; background-position: -214px -467px; text-indent: -9999px; }
+/*-------------------------------Section contacts-------------------------------- */
+
+.contacts address { font-style: normal; text-align: center; }
+.contacts address .site-link { border-bottom: 1px solid; text-decoration: none; }
+.contacts address .site-link:hover { color: #00A2BF; border-color: #00A2BF; }
+.contacts a[href^="tel"] { display: block; text-decoration: none; color: #6C4742; }
+.contacts .facilities-desc { margin: 0 auto; }
+.contacts .address-header,
+.htg-header-capt { margin: .7em 0 1.2em; font: 14px 'intro-bold',sans-serif; text-align: center; text-transform: uppercase; }
+.contacts .restaurant-addr { margin: 1em 0 3em; }
+.contacts-end { font-size: 1em; max-width: 630px; margin: 4em auto 0; }
+
+.htg-header-pict { height: 64px; margin: 0 auto; }
+.htg-header-pict.plane { width: 60px; background: url(../img/sloboda_sprite.png) -22px -402px no-repeat; }
+.htg-header-pict.train { width: 38px; background: url(../img/sloboda_sprite.png) -108px -402px no-repeat; }
+.htg-header-pict.car { width: 70px; background: url(../img/sloboda_sprite.png) -171px -402px no-repeat; }
+.how-to-get-header { margin: 2.5em 0 0.5em; border-top: 2px groove #FFF3E5; text-align: center; }
+.how-to-get-header > span { position: relative; top: -24px; display: inline-block; padding: 0 3%; background: url("../img/texture.gif"); font: 1.5em 'jaf-zalamander',sans-serif; text-align: center; text-transform: uppercase; }
+/*-------------------------------Section reviews-------------------------------- */
+.review { max-width: 980px; margin: 0 auto; }
+.review-form-container { width: 760px; margin: 0 auto; background: #e9d8b8; }
+.review-form-container .leave-a-msg { padding: 1em 0; font: 1.5em 'jaf-zalamander', sans-serif; text-transform: uppercase; text-align: center; }
+.review-form-container .leave-a-msg span { border-bottom: 1px dotted #6C4742; cursor: pointer;
+	transition: all .8s ease;
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+}
+.review-form-container .request-mail,
+.booking-main .request-mail { padding: 3.5em 0 8.5em; text-align: center; }
+
+input,
+textarea {
+	outline: none;
+	-moz-box-shadow: 0 0 0 0 rgba(108, 70, 63, 0.3) inset;
+	-webkit-box-shadow: 0 0 0 0 rgba(108, 70, 63, 0.3) inset;
+	box-shadow: 0 0 0 0 rgba(108, 70, 63, 0.3) inset;
+}
+input[type="text"]:focus,
+textarea:focus {
+	-moz-box-shadow: 3px 3px 0 0 rgba(108, 70, 63, 0.3) inset;
+	-webkit-box-shadow: 3px 3px 0 0 rgba(108, 70, 63, 0.3) inset;
+	box-shadow: 3px 3px 0 0 rgba(108, 70, 63, 0.3) inset;
+}
+.review-form-container .leave-a-msg span:hover { border-color: transparent; color: #00A2BF;}
+.review-form { display: none; padding: 0 2.875em 1.5em; }
+.form-elem { margin: 0 0 1em; }
+.percent-input { float: left; width: 72.5%; padding: 0.5em 0 0.5em 3%; border: 1px solid #bcb1a7; color: #6C4742; }
+.review-form .percent-input { width: 70.5%; }
+.percent-input.valid-required.quantity-input { max-width: 45px; padding-left: 10px; }
+textarea.percent-input { height: 8em; }
+.percent-lbl { float:left; width: 25.5%; line-height: 2em; }
+.star-rating-container { height: 3.5em; margin: 0 0 1em; padding: 1.8em 2% 0; border-top: 2px groove #fff; border-bottom: 2px groove #fff;}
+.star-rating-capt { float: left; width: 48%; }
+.star-rating-desc { float: left; width: 50%; padding: 0 0 0 2%; }
+#hover-test { position: relative; top: -5px; float: right; height: 25px; padding: 2% 5% 2% 2%; background: #FFF; }
+#hover-test:before {
+	content:' ';
+	position: absolute;
+	left: -17px;
+	top: 0;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 19px 18px 19px 0;
+	border-color: transparent #fff transparent transparent;
+}
+.review-form .reviews-input { outline: none; display: block; width: 239px; height: 46px; margin: 0 auto; border: none; background: url(../img/sloboda_sprite.png) -212px -259px no-repeat; text-indent: -9999px; cursor: pointer; }
+.review-form .reviews-input:hover { opacity: .8; }
+.reviews-list { width: 760px; margin: 2.5em auto 0; padding: 0; list-style: none; }
+.reviews-item.clearfix { padding: 2em 0; border-bottom: 2px groove #f2efe8; }
+.reviews-left { float: left; width: 24.5%; }
+.reviews-right { float: left; width: 73.5%; }
+.reviews-right .star-rating-desc { float: none; width: 100%; height: 30px; margin: .5em 0 .5em; padding: 0; }
+.review-star { float: left; width: 27px; height: 30px; margin: 0 5px 0 0; background:url(../img/sloboda_sprite.png) no-repeat -63px -325px; }
+.review-star.active-star { background-position: -22px -325px; }
+.reviews-ava { width: 42px; height: 42px; margin: 0 0 .5em 0; background: url(../img/sloboda_sprite.png) no-repeat -249px -401px; }
+.reviews-ava.admin { background-position: -290px -401px; }
+.user-name { font: 1em 'intro-bold',sans-serif; }
+.user-city { margin: .5em 0; font: italic .875em 'intro-book', sans-serif; }
+.date { margin: .1em 0; font: 0.75em 'intro-book', sans-serif; }
+.admin-responce .date { margin: 0.5em 0; }
+.show-more-container { text-align: center; }
+.show-more-reviews { display: inline-block; margin: 4em 0 0; font: .875em 'intro-bold', sans-serif; text-transform: uppercase; border-bottom: 1px dotted #6C4742; cursor: pointer;
+	transition: all .8s ease;
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+}
+.show-more-reviews:hover { border-color: transparent; color: #00A2BF; }
+.admin-responce { margin: 1em 0 0; }
+/*-------------------------------Section sights-------------------------------- */
+
+.sights-switcher { margin: 1.5em 0; text-align: center; }
+.sights-switcher .sights-map,
+.sights-switcher .sights-photos { padding: 4px 10px; font: 1em/1.7em 'intro-bold',sans-serif; text-transform: uppercase; cursor: pointer;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+}
+.switcher-inner { border-bottom: 1px dotted #6C4742;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+}
+.sights-switcher .sights-map:hover,
+.sights-switcher .sights-photos:hover,
+.sights-switcher .sights-map.active,
+.sights-switcher .sights-photos.active { background: #e3d3b6; color: #00a2bf; }
+.sights-switcher .sights-map:hover .switcher-inner,
+.sights-switcher .sights-photos:hover .switcher-inner,
+.sights-switcher .sights-map.active .switcher-inner,
+.sights-switcher .sights-photos.active .switcher-inner { border-color: transparent; }
+.sights-switcher .sights-map.active .switcher-inner,
+.sights-switcher .sights-photos.active .switcher-inner { cursor: default; }
+
+.sights-page { max-width: 1000px; margin: 0 auto; }
+.sights-page .sights-list { display: none; margin: 2.5em auto; padding: 0; list-style: none; text-align: left; }
+.sights-page .sight-item { position: relative; top: 0; left: 0; display: inline-block; width: 294px; margin: 0 .5em 1em; padding: 9px; background: #FFF;
+	-moz-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+	-webkit-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+	box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+}
+.sights-page .sight-item:hover {
+	-moz-box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+	-webkit-box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+	box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+}
+.sights-page .sight-item:hover .sight-capt { color: #00A2BF; }
+.sight-item-link { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/*-------------------------------     Map    -------------------------------- */
+.map { position: relative; max-width: 980px; margin: 2.5em auto 0; }
+.main-map { max-width: 100%; position: relative; top: -9px;}
+.map-link { position: absolute; font: .875em 'intro_book_italicitalic', sans-serif; color: #6C4742; text-decoration: none; text-align: center; }
+.map-link .main-img { position: relative; z-index: 2; display: block; margin: 0 auto; max-width: 100%; }
+.map-link .site-caption { position: relative; z-index: 3; text-decoration: none; }
+.map-link:hover .site-caption { text-decoration: underline; color: #00A2BF; }
+.cond-container { display: inline-block; position: relative; }
+.shadow { opacity: 0; position: absolute; top: 0; left: 0; z-index: 1;}
+.map-link:hover .shadow { opacity: 1; top: 5px; left: 5px; }
+.lagonaki .shadow,
+.trezmount .shadow { top: 10px; left: 20px; }
+.lagonaki:hover .shadow,
+.trezmount:hover .shadow { opacity: 1; top: 15px; left: 25px; }
+.map-link.mechet { top: 0; left: 31%; width: 13%; }
+.map-link.mechet .site-caption { position: relative; display: block; margin: 5px 0 0; }
+.map-link.monastery { top: 28.3%; left: 69%; width: 19%; }
+.map-link.monastery .site-caption { position: absolute; top: 53%; left: 104%; }
+.map-link.rufabgo { top: 39.6%; left: 41.2%; width: 9%; }
+.rufabgo .site-caption { position: absolute; top: 31%; right: 66%; }
+.map-link.dahcave { top: 49.5%; left: 69.5%; width: 7%; }
+.dahcave .site-caption { display: block; margin: 2px 0 0; white-space: nowrap; }
+.map-link.kazstone { top: 42.8%; left: 49.4%; width: 5%; }
+.kazstone .site-caption { position: absolute; top: 114%; right: 40%; }
+.map-link.nezhcave { top: 51.5%; left: 42%; width: 6%; }
+.nezhcave .site-caption { display: block; margin: 2px 0 0; }
+.map-link.pyatpole { top: 55%; left: 26.5%; width: 9%; }
+.map-link.trezmount { top: 60%; left: 49%; width: 11%; }
+.trezmount .site-caption { display: block; margin: 2px 0 0; }
+.map-link.waterfalls { top: 61%; left: 68.3%; width: 9%; }
+.waterfalls .site-caption { position: absolute; top: 6px; left: 100%; }
+.map-link.azishcave { top: 66.5%; left: 31.3%; width: 13%; }
+.azishcave .site-caption { display: block; }
+.map-link.partpole { top: 82%; left: 28%; }
+.map-link.dolmen { top: 84.6%; left: 59%; width: 10%; }
+.dolmen .site-caption { display: block; margin: 2px 0 0; }
+.map-link.lagonaki { top: 74.5%; left: 9%; width: 12%; }
+.lagonaki .site-caption { display: block; margin: 2px 0 0; }
+.map-link.guamcave { top: 53%; left: 10%; width: 5%; }
+.guamcave .site-caption { position: absolute; top: 61%; right: 100%; }
+.map-link.hadzhtes { top: 36.1%; left: 52.4%; width: 5%; }
+.hadzhtes .site-caption { position: absolute; bottom: 100%; left: 96%; }
+.map-link.ancientgrot { top: 43%; left: 60%; width: 10%; }
+.ancientgrot .site-caption { display: block; width: 8em; }
+.map-link.mezmai { top: 55.4%; left: 21%; }
+/*-------------------------------Section room-------------------------------- */
+
+.room { max-width: 980px; margin: 0 auto; }
+.room .waves { margin: 2.5em 0 0; }
+.room .facilities-header { min-height: 1.5em; }
+.roomcount { margin: 1.2em 0; text-align: center; }
+.room-roomcount { position: relative; display: inline-block; height: 38px; background: #c58c44; margin: 0 auto; padding: 0 1em; font: 1em/2.4em 'intro-bold', sans-serif; text-transform: uppercase; color: #fff; }
+.room-roomcount .top-angle.left-side { border-width: 0 12px 20px 0; top: 0; left: -11px; border-color: transparent #c58c44 transparent transparent; }
+.room-roomcount .bottom-angle.left-side { border-width: 0 0 20px 12px; top: 18px; left: -11px; border-color: transparent transparent #c58c44 transparent; }
+.room-roomcount .top-angle.right-side { top: 0; left: auto; right: -11px; border-width: 20px 12px 0 0; border-color: #c58c44 transparent transparent transparent; }
+.room-roomcount .bottom-angle.right-side { top: 18px; left: auto; right: -11px; border-width: 20px 0 0 12px; border-color: transparent transparent transparent #c58c44; }
+
+
+.single-price { font: 56px 'jaf-zalamander', serif; text-align: center; }
+.single-wave-container .page-description { margin: 0 0 0.5em; }
+.single-wave-item { height: 7px; background: url("../img/wave.gif") repeat-x; }
+.room-price-block { margin: 2.5em 3%; }
+.single-wave-container { padding: 1.7em 0 2.5em; }
+
+/*-------------------------------fancyBox styles------------------------------- */
+.fancybox-title { margin: 0; padding: 0 25px 25px 25px; text-align: center; background: #fff; }
+.fancybox-header { margin: 0; padding: 0 0 1em 0; font: 1.25em 'intro-bold', sans-serif; text-transform: uppercase; color: #6C4742; }
+.fancybox-desc { margin: 0 0 1em 0; color: #6C4742; }
+.fancybox-link { color: #00A2BF; }
+.fancybox-link:hover { text-decoration: none; }
+/*-------------------------------jCarousel styles------------------------------- */
+
+.jcarousel-wrapper {
+	position: relative;
+	margin: 40px 0 0;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 83.5%;
+    margin: 0 auto;
+    padding: 5px 8px 5px 8px;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    width: 200px;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jcarousel li .sight-item-cont {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 294px;
+	padding: 9px;
+	background: #FFF;
+	-moz-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+	-webkit-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+	box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+}
+.jcarousel li .sight-item-cont:hover {
+	-moz-box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+	-webkit-box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+	box-shadow: 4px 4px 0 0 rgba(108, 71, 66, .3);
+}
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+   	width: 36px;
+   	height: 50px;
+   	margin-top: -25px;
+   	margin-left: -18px;
+}
+
+.jcarousel-control-prev {
+    left: 3.5%;
+    background: url(../img/sloboda_sprite.png) -308px -87px no-repeat;
+}
+.jcarousel-control-prev:hover {
+	background-position: -280px -87px;
+}
+
+.jcarousel-control-next {
+    right: 2%;
+    background: url(../img/sloboda_sprite.png) -349px -87px no-repeat;
+}
+.jcarousel-control-next:hover {
+    background-position: -427px -87px;
+}
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    float: left; width: 17px; height: 17px; margin: 0 5px; border: none; outline: none; background: url(../img/sloboda_sprite.png) -234px -70px no-repeat; text-indent: -9999px;
+}
+
+.jcarousel-pagination a.active {
+    background-position: -214px -70px;
+}
+/*-------------------------------Weather------------------------------- */
+
+#weather > p {
+    margin: 2em 0 0.3em;
+}
+.weather-header {
+    font: 13px 'intro-bold',sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6C463F;
+    border-bottom: 1px solid #6C463F;
+    outline: none;
+}
+.weather-header:hover {
+	color: #00A2BF;
+	border-color: #00A2BF;
+}
+.weather-columns.clearfix {
+    margin: 1em auto 4em;
+}
+.weather-temp, .weather-wind, .current-weather {
+    display: inline-block;
+    margin: 0 2% 2%;
+}
+.sloboda-in-img {
+  position: relative;
+  width: calc(~'100% - 10px');
+  border: 5px solid #fff;
+  background: #fff;
+  overflow: hidden;
+  height: 400px;
+}
+.sloboda-in-img img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*-------------------------------Spans------------------------------- */
+span.sup { position: relative; top: -0.5em; left: 0.1em; font-size: 0.6em; }
+span.caps { text-transform: uppercase; }
+span.normal { font-style: normal; }
+.no-caps { text-transform: none; }
+.italic-capt { font-style: italic; }
+
+/*-------------------------------Media Queries------------------------------- */
+@media screen and (max-width: 1280px) {
+	.offers-list { padding: 0; text-align: center; }
+	.offers-item { display: inline-block; float: none; margin: 4px 4px 6px; vertical-align: top; }
+}
+@media screen and (max-width: 1168px) {
+	.jcarousel li .sight-item-cont:hover {
+		-moz-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+		-webkit-box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+		box-shadow: 0 0 0 0 rgba(108, 71, 66, .3);
+	}
+}
+@media screen and (max-width: 1100px) {
+	.sight-capt { font-size: 12px; }
+	.jcarousel li .sight-item-cont { width: 100%; }
+
+	.cond-container { width: 100%; }
+	.shadow { max-width: 100%; }
+}
+@media screen and (max-width: 1054px) {
+	.shadow { display: none; }
+	.ancientgrot .site-caption { position: absolute; top: 29%; left: 78%; }
+	.map { font-size: .75em; }
+
+	.sights-page,
+	.offers-list { max-width: 660px; }
+}
+@media screen and (min-width: 1024px) {
+	.contacts .contact-info .sloboda-column.left-column { margin: 0 5.1% 0 0; width: 28%; }
+	.contacts .contact-info .sloboda-column.right-column { margin: 0 0 0 5.1%; width: 28%; }
+}
+@media screen and (max-width: 1024px) {
+	.waves { margin: 0 8%; }
+	.waves h1, .waves h2 { font-size: 46px; letter-spacing: 10px; padding-left: 18px; }
+	.header-wo-waves { font-size: 46px; }
+	.room-item { font-size: 0.9em; }
+
+	.htg-there { display: none; }
+	.htg-there.payment-link	{ display: block; }
+	.payment-columns label { white-space: normal; }
+
+}
+@media screen and (max-width: 986px) {
+	.index-slideshow { padding: 15px; }
+	.nav-item { width: 11.5%; }
+	.nav-item-desc { font-size: 12px; }
+	.sight-capt { font-size: 10px; line-height: 10px; padding: 9px 0 5px; white-space: nowrap; }
+	.page-description { font-size: 1.2em; }
+	.contacts-end { padding: 0 5%; width: 90%; }
+	.room-item { font-size: 0.8em; }
+}
+@media screen and (max-width: 880px) {
+	.comfort-item { margin: 0 7px 0 0; }
+}
+@media screen and (max-width: 844px) {
+	body {
+		-moz-box-shadow: 0 0 0 12px #FFF inset;
+		-webkit-box-shadow: 0 0 0 12px #FFF inset;
+		box-shadow: 0 0 0 12px #FFF inset;
+	}
+
+	.comfort-item { margin: 0 7px 0 0; }
+	.room-item-right { width: 100%; margin: 1em 0 0; }
+	.room-item-left { float: none; margin: 0 auto 3em; }
+	.room-type { margin: 0 0 .75em; }
+	.room-order { margin: 0 0 2em; }
+	.room-desc { padding: 0 0 4em; }
+	.review-form-container,
+	.reviews-list { width: 735px; }
+}
+@media screen and (max-width: 788px) {
+	.review-form-container,
+	.reviews-list { width: 100%; }
+}
+@media screen and (max-width: 768px) {
+	.booking-main-form.payment-form .percent-input { width: 30%; }
+
+	body {
+		-moz-box-shadow: 0 0 0 0;
+		-webkit-box-shadow: 0 0 0 0;
+		box-shadow: 0 0 0 0;
+	}
+	.contacts-link { display: none; }
+	.htg-there.payment-link { position: absolute; top: 2%; right: 2%; }
+	.sights-switcher,
+	.map { display: none; }
+	nav { padding: 0; }
+	.nav-item.main-logo { position: relative; left: auto; height: 161px; margin-left: 0; }
+	.weather-columns.clearfix { width: 100%; }
+
+	.index-slideshow { padding: 10px; }
+	.nav-item-desc { font-size: 12px; }
+	.jcarousel-control-prev { left: 1.5%; }
+	.jcarousel-control-next { right: -3%; }
+	.index-slideshow,
+	.htg-there,
+	.contact-nums { margin: 0; }
+	.waves h1, .waves h2,
+	.booking-section .waves h1 { font-size: 36px; }
+
+	.booking-section { padding: 0 3%; }
+	.booking-section .waves h1:before{ right: 97%; }
+	.booking-section .waves h1:after{ left: 97%; }
+	.header-wo-waves { font-size: 36px; }
+	.page-description { font-size: 1em; }
+/*---------------------------------Mobile menu styles----------------------------- */
+	.logo { top: -35px; height: 158px; background: url("../img/mob_logo.png") no-repeat scroll center center; }
+
+	#mobile-trigger { display: block; }
+	.mobile-nav { margin: 0; padding: 10px 10px 10px 25px; background: #FFF; }
+	header { height: auto; }
+	.nav-item.left-item,
+	.nav-item.right-item,
+	.htg-there,
+	.contact-nums { display: none; }
+	.mobile-nav .nav-item-desc { width: 50px; height: 35px; margin: 15px 0 15px 50px; line-height: 35px; }
+	.nav-item-icon { float: left; }
+	.mobile-nav .reviews .nav-item-desc { margin-left: 42px; }
+	.ribbon-body { width: 380px; }
+	.ribbon-inner-content:before,
+	.ribbon-inner-content:after { display: none; }
+	.restaurant-spot.spot-link { left: 60%; top: 51%; }
+	.administratin-spot.spot-link { left: 60%; top: 55%; }
+
+	.roomlist .sloboda-column,
+	.contacts .sloboda-column { font-size: .8em; }
+	.payment-columns.facilities-desc .sloboda-column { font-size: 1em; }
+
+	#hover-test { display: none; }
+}
+@media screen and (max-width: 710px) {
+	.sights-page,
+	.offers-list { max-width: 600px; }
+	.sights-page .sights-list,
+	.offers-list { text-align: center; }
+	.booking-main-form.payment-form .percent-input { width: 28%; }
+}
+@media screen and (max-width: 640px) {
+	.booking-main-form .percent-lbl { width: 100%; }
+	.payment-form .percent-lbl { width: 100%; margin: 0 0 1em; text-align: left; }
+	.pay-form .percent-lbl { display: block; float: none; margin: 0.5em auto; text-align: left; }
+	.pay-form .percent-lbl.big-zalamander { height: 34px; margin: 0 auto; line-height: 34px; }
+	.pay-form .percent-input,
+	.payment-form .percent-input { float: left; display: block; margin: .5em 0; }
+	.booking-main-form .form-submit.payment-ok { float: left; margin: .4em 0 .4em 2%; }
+
+	.booking-main { font-size: .8em; }
+	.pay-form,
+	.payment-form { font-size: 16px; }
+	.booking-main .sbSelector { line-height: 3.3em; }
+
+	.room .waves h1,
+	.room .waves h2 { white-space: normal; }
+	.room-item-right { height: auto !important;  }
+	.index-slideshow { min-height: 0; }
+	.waves { background: none; }
+	.waves h1, .waves h2,
+	.booking-section .waves h1 { padding: 0 0 0 10px; }
+	.left-wave,
+	.right-wave { display: block; margin: 15px auto; }
+	.booking-section .waves h1:before{ display: none; }
+	.booking-section .waves h1:after{ display: none; }
+	.booking-main-error { margin: 0; }
+
+	.facilities.wedding-facilities { margin: 2em 0; }
+	.facilities-desc .sloboda-column { float: none; width: 90%;  margin: 2em 0; padding: 0 5%; }
+	.payment-columns h2 { font-size: 1.6em; margin: 16px 0; }
+	.billiards .sloboda-column.left-column,
+	.billiards .sloboda-column.right-column { width: 100%; margin: 0 auto; text-align: center; }
+	.billiards .sloboda-column.right-column { margin: 3em 0 0; }
+
+	.roomlist .sloboda-column,
+	.contacts .sloboda-column { font-size: 1em; }
+	.jcarousel-control-next { right: -4%; }
+
+	.single-wave { margin: 0 auto; }
+	.jcarousel-pagination { display: none; }
+
+	.room-item-left { width: 100%; margin: 0; }
+	.room-desc { padding: 0 0 8em; }
+	.subflag { display: none; }
+	.image-map { margin: 2em auto; }
+	.mangal-1-spot.spot-link { left: 73%; }
+
+	.review-form { padding: 0 0.875em 1.5em; }
+	.reviews-right.reviews-desc { font-size: .8em; }
+}
+@media screen and (max-width: 480px) {
+	.pay-form .percent-lbl { width: 100%; }
+	.pay-form .percent-input { width: 80%; }
+
+	.booking-adapt { text-align: center; }
+	.booking-adapt .percent-lbl { display: block; width: 100%; }
+	.booking-adapt .Zebra_DatePicker_Icon_Wrapper { float: none !important; margin: 0 auto; width: 80%; }
+	.booking-adapt .booking-desired-num .form-input-element .sbHolder { width: 80%; float: none; margin: 0 auto; }
+
+	.booking-adapt .percent-input { width: 80%; }
+
+	.htg-there { font-size: .8em; padding-left: 0; background: none; }
+
+	.jcarousel { padding: 5px 8px 5px 0; }
+	.jcarousel li .sight-item-cont { width: 85%; margin: 0 auto; padding: 2% 2% 2% 2%; }
+	.sight-pict { width: 100%; height: 100%; }
+	.sight-item { width: 278px !important; margin: 0 10px 0 0; }
+	.jcarousel-control-prev { left: 3.5%; }
+	.map { font-size: .6em; }
+	.map-link.monastery .site-caption { top: -21%; left: -8%; }
+	.wrapper { overflow-x: hidden; }
+	.jcarousel-control-next { right: -5%; }
+	.fotorama__nav-wrap { display: none; }
+	.footer-addr > address { width: 300px; font-size: 16px; }
+	.copyright { font-size: 12px; }
+	.dev > a { height: 14px; }
+
+	.waves { margin: 0; }
+	.waves h1, .waves h2,
+	.booking-section .waves h1 { width: 100%; font-size: 26px; white-space: nowrap;  padding: 0 0 0 4px; }
+	.header-wo-waves { font-size: 26px; }
+	section.facilities { margin: 68px 0 0; font-size: 12px; }
+	section.offers { margin: 15px 0 0; }
+	.ribbon-body { width: 100%; }
+	.ribbon-inner { height: 100%; font-size: 1.2em; }
+	.restaurant-spot.spot-link { top: 48%; }
+	.hotspots .spot-link { font-size: .55em; }
+	.image-map { margin: 0 auto; }
+
+	.percent-lbl { width: 100%; float: none; display: block; text-align: center; margin: 0 0 .5em; }
+	.percent-input { width: 97%; float: none; }
+	.star-rating-container { height: 4.5em; }
+	.star-rating-capt { float: none; width: 100%; text-align: center; }
+	.star-rating-desc { float: none; width: 155px; margin: 5px auto; padding: 5px 0; }
+	.star-rating-control { display: block; text-align: center; }
+	div.star-rating { display: inline-block; float: none; }
+
+	.reviews-right,
+	.reviews-left { float: none; width: 100%; }
+	.reviews-right .star-rating-desc { float: none; width: 162px; margin: 1em auto; }
+	.reviews-left { text-align: center; }
+	.reviews-ava { margin: 0 auto; }
+	.review-form .percent-input { width: 97%; }
+	.dp_daypicker { width: 100%; }
+}
+@media screen and (max-width: 360px) {
+	.star-rating-container { padding-bottom: 9%; }
+	.room-type { width: 128px; }
+}
+@media screen and (max-width: 320px) {
+	.wrapper { min-width: 300px; }
+	.sights-page .sight-item { width: 90%; }
+	.sight-pict { width: 100%; }
+	.jcarousel { left: -4px; }
+	.jcarousel-control-next { right: -6%; }
+	.footer-addr > address { width: 270px; }
+	.offers-item { width: 100%; margin: 4px 0 6px; }
+	.footer-addr > address { width: 100%; }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

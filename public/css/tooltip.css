@@ -1,0 +1,44 @@
+.ui-tooltip, .arrow-tooltip:after {
+  background: #efe2cd;
+  border: 1px solid #bdb2a8;
+}
+.ui-tooltip.ui-widget {
+  padding: 8px 15px;
+  color: #6c463f;
+  font: 1em "PT Serif", Sans-Serif;
+  box-shadow: none;
+  border: 1px solid #bdb2a8;
+}
+.arrow-tooltip {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow-tooltip.top {
+  top: -16px;
+  bottom: auto;
+}
+.arrow-tooltip.left {
+  left: 20%;
+}
+.arrow-tooltip:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  tranform: rotate(45deg);
+}
+.arrow-tooltip.top:after {
+  bottom: -20px;
+  top: auto;
+}
