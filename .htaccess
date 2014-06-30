@@ -3,9 +3,14 @@ Options +FollowSymLinks
 Options -Indexes
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^dah-sl.ru$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.xn----7sbabedmf4cm2afb9ad1dzk.xn--p1ai$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^xn----7sbabedmf4cm2afb9ad1dzk.xn--p1ai$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.dah-sl.ru$
+#RewriteCond %{HTTP_HOST} ^dah-sl.ru$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.xn----7sbabedmf4cm2afb9ad1dzk.xn--p1ai$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^xn----7sbabedmf4cm2afb9ad1dzk.xn--p1ai$ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.dah-sl.ru$
+
+#local version
+RewriteCond %{HTTP_HOST} ^dah-sl$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.dah-sl$
+
 RewriteCond %{REQUEST_URI} !public/
 RewriteRule (.*) /public/$1 [L]
