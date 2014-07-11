@@ -62,7 +62,7 @@
 	</div>
 	<div class="booking-name">
 		<div class="form-input-element form-elem clearfix{{ ($errors->has('name')?' error':'') }}">
-			<label class="percent-lbl">Представьтесь</label>
+			<label class="percent-lbl">Ф.И.О.</label>
 			<input class="percent-input valid-required" name="name" value="{{ Input::old('name') }}" type="text">
 			{{ $errors->first('name','<div class="form-error">:message</div>') }}
 		</div>
