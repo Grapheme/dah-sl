@@ -87,7 +87,7 @@ class ReviewsController extends BaseController {
 		endif;
 		if(Input::hasFile('file')):
 			$fileName = str_random(16).'.'.Input::file('file')->getClientOriginalExtension();
-			ImageManipulation::make(Input::file('file')->getRealPath())->resize(42,42,TRUE)->save('download/'.$fileName);
+			ImageManipulation::make(Input::file('file')->getRealPath())->resize(42,42)->save('download/'.$fileName);
 			$review->icon = 'download/'.$fileName;
 		endif;
 		$review->save();

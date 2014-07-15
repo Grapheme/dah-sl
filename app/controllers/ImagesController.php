@@ -40,12 +40,7 @@ class ImagesController extends BaseController {
 				if(!File::exists(getcwd().'/download/'.$group.'/thumbnail')):
 					File::makeDirectory(getcwd().'/download/'.$group.'/thumbnail',0777,TRUE);
 				endif;
-				#echo public_path('download/'.$group.'/thumbnail/'.$fileName); die;
-				#print_r(Input::file('file')->getRealPath()); die;
-				ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100,TRUE)->save('download/'.$group.'/thumbnail/'.$fileName);
-				#ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100,TRUE)->save(public_path('download/'.$group.'/thumbnail/'.$fileName));
-			    #print_r(Input::file('file'));exit;
-
+				ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100)->save('download/'.$group.'/thumbnail/'.$fileName);
 				Input::file('file')->move(getcwd().'/download/'.$group,$fileName);
 				$this->image->image = json_encode(array('image'=>'download/'.$group.'/'.$fileName,'thumbnail'=>'download/'.$group.'/thumbnail/'.$fileName));
 			endif;
@@ -95,7 +90,7 @@ class ImagesController extends BaseController {
 					File::makeDirectory(getcwd().'/download/'.$group,0777,TRUE);
 					File::makeDirectory(getcwd().'/download/'.$group.'/thumbnail',0777,TRUE);
 				endif;
-				ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100,TRUE)->save('download/'.$group.'/thumbnail/'.$fileName);
+				ImageManipulation::make(Input::file('file')->getRealPath())->resize(100,100)->save('download/'.$group.'/thumbnail/'.$fileName);
 				Input::file('file')->move(getcwd().'/download/'.$group,$fileName);
 				$image->image = json_encode(array('image'=>'download/'.$group.'/'.$fileName,'thumbnail'=>'download/'.$group.'/thumbnail/'.$fileName));
 			endif;
