@@ -18,7 +18,7 @@
 			</div>
 			<a id="housing-2" class="housing-2-spot spot-link fancybox" href="<?=URL::to('img/photos/complex2.jpg');?>">Корпус №2</a>
 			<!--<a id="mangal" class="mangal-1-spot spot-link fancybox" href="<?=URL::to('img/photos/mangal.jpg');?>">Мангал</a>-->
-			<a id="enter" class="entry-spot spot-link fancybox" href="<?=URL::to('img/photos/enter.jpg');?>">Въезд</a>
+			<a id="enter" class="entry-spot spot-link fancybox" href="<?=URL::to('img/photos/viezd.jpg');?>">Въезд</a>
 			<a id="parking" class="parking-spot spot-link fancybox" href="<?=URL::to('img/photos/parking.jpg');?>">Парковка</a>
 			<a id="housing-3" class="housing-3-spot spot-link fancybox" href="<?=URL::to('img/photos/complex3.jpg');?>">Корпус №3</a>
 			<a id="pond" class="small-pond-spot spot-link fancybox" href="<?=URL::to('img/photos/pond.jpg');?>">Пруд</a>
@@ -30,8 +30,8 @@
 			<a id="child_garden" class="playground-spot spot-link fancybox" href="<?=URL::to('img/photos/child_pole.jpg');?>">Детская площадка</a>
 			<a id="pool" class="pool-spot spot-link fancybox" href="<?=URL::to('img/photos/pool.jpg');?>">Бассейн</a>
 			<a id="housing-1" class="housing-1-spot spot-link fancybox" href="<?=URL::to('img/photos/complex1.jpg');?>">Корпус №1</a>
-			<a id="zoo" class="zoo-spot spot-link fancybox" href="#">Зоопарк</a>
-			<a id="serv" class="serv-spot spot-link fancybox" href="#">Служебное помещение</a>
+			<a id="zoo" class="zoo-spot spot-link fancybox" href="<?=URL::to('img/photos/zoo.jpg');?>">Зоопарк</a>
+			<a id="serv" class="serv-spot spot-link fancybox" href="<?=URL::to('img/photos/slujebnoe-zdanie.jpg');?>">Служебное помещение</a>
 		</div>
 	</div>
 </section>
