@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	@include('admin_interface.includes.head')
+	@yield('style')
 </head>
 <body>
 	@include('admin_interface.includes.navbar-top')

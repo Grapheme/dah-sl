@@ -90,7 +90,8 @@ Route::group(array('before'=>'admin.auth'),function(){
 	/*=================== BILLS ==================*/
 	Route::resource('control-panel/bills','BillsController');
 	Route::get('control-panel/bills/{id}/delete','BillsController@delete');
-	Route::get('control-panel/statistic/bills/year/{year}',array('as'=>'control-panel.statistic','uses'=>'BillsController@statistic'));
+	Route::get('control-panel/statistic/bills/year/{year}',array('as'=>'control-panel.statistic.bills','uses'=>'BillsController@statisticBills'));
+	Route::get('control-panel/statistic/booking/year/{year}',array('as'=>'control-panel.statistic.booking','uses'=>'BillsController@statisticBooking'));
 
 	/*=================== ACTIONS ==================*/
     Route::resource('control-panel/actions', 'ActionsController');

@@ -1,7 +1,7 @@
 @extends('admin_interface.cpanel')
 @section('content')
 {{ HTML::link('control-panel/bills','Вернуться назад',array("class"=>'btn btn-default')) }}
-    <h3> Статистика счетов за {{ Request::segment(5) }} год </h3>
+    <h3> Статистика заказов за {{ Request::segment(5) }} год </h3>
     <div id="billschart" style="width:848px;height: 300px;" class="chart"></div>
     <?php
         $months = array('','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь');
@@ -10,22 +10,18 @@
     	<thead>
     		<tr>
     			<th>Месяц</th>
-    			<th>Количество</th>
-    			<th>Сумма</th>
+    			<th>Количество (Заказ номера)</th>
     			<th></th>
-    			<th>Количество</th>
-    			<th>Сумма</th>
+    			<th>Количество (Заказ услуги)</th>
     		</tr>
     	</thead>
     	<tbody>
     	@foreach($months as $index => $month)
     		<tr>
     			<td> {{ $month }} </td>
-    			<td> {{ isset($paidBills[$index]) ? $paidBills[$index]['cnt'] .' шт.' : '' }} </td>
-    			<td> {{ isset($paidBills[$index]) ? $paidBills[$index]['price'] .' руб.' : '' }}  </td>
+    			<td> {{ isset($roomsBooking[$index]) ? $roomsBooking[$index]['cnt'] .' шт.' : '' }} </td>
     			<td></td>
-    			<td> {{ isset($unpaidBills[$index]) ? $unpaidBills[$index]['cnt'] .' шт.' : '' }} </td>
-    			<td> {{ isset($unpaidBills[$index]) ? $unpaidBills[$index]['price'] .' руб.' : '' }} </td>
+    			<td> {{ isset($servicesBooking[$index]) ? $servicesBooking[$index]['cnt'] .' шт.' : '' }} </td>
     		</tr>
     	@endforeach
     	</tbody>
@@ -44,18 +40,18 @@
     var $color_unpaid       = "#ff00ff";
 
     var $month = ['','Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
-    var unpaid = []
-    var paid = [];
+    var rooms = []
+    var services = [];
     @foreach($months as $index => $month)
-        @if(isset($paidBills[$index]))
-            paid.push([ {{ $index }} , {{ $paidBills[$index]['cnt'] }} ])
+        @if(isset($roomsBooking[$index]))
+            rooms.push([ {{ $index }} , {{ $roomsBooking[$index]['cnt'] }} ])
         @else
-            paid.push([ {{ $index }}, 0])
+            rooms.push([ {{ $index }}, 0])
         @endif
-        @if(isset($unpaidBills[$index]))
-            unpaid.push([ {{ $index }} , {{ $unpaidBills[$index]['cnt'] }} ])
-        @else
-            unpaid.push([ {{ $index }}, 0])
+        @if(isset($servicesBooking[$index]))
+            services.push([ {{ $index }} , {{ $servicesBooking[$index]['cnt'] }} ])
+         @else
+            services.push([ {{ $index }}, 0])
         @endif
     @endforeach
 
@@ -88,11 +84,11 @@
         },
         tooltip : true,
         tooltipOpts : {
-            content : "%x-й месяц - %y",
+            content : "%x-й месяц - %y заказов",
         },
         colors : [$color_paid,$color_unpaid],
     };
 
-    var plot = $.plot($("#billschart"),[{data : unpaid,label : "Неоплаченные счета"},{data : paid,label : "Оплаченные счета"}] , options);
+    var plot = $.plot($("#billschart"),[{data : rooms,label : "Заказ номеров"},{data : services,label : "Заказ услуг"}] , options);
 </script>
 @stop

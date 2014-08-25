@@ -65,7 +65,7 @@ class BillsController extends \BaseController {
 
     /*------------------------------------------------ */
 
-    public function statistic($year){
+    public function statisticBills($year){
 
         $unpaidBills = DB::table('bills')
             ->select(DB::raw('extract(Year from created_at) as year, extract(Month from created_at) as month, count(id) as cnt, sum(price) as price'))
@@ -100,4 +100,39 @@ class BillsController extends \BaseController {
         $paidBills = $temp;
         return View::make('admin_interface.bills.statistic',compact('unpaidBills','paidBills'));
     }
+
+    public function statisticBooking($year){
+
+        $roomsBooking = DB::table('booking')
+            ->select(DB::raw('extract(Year from created_at) as year, extract(Month from created_at) as month, count(id) as cnt'))
+            ->where('booking_type',1)
+            ->whereBetween('created_at', array($year.'-01-01 00:00:00', $year.'-12-31 23:59:59'))
+            ->orderBy('year')
+            ->orderBy('month')
+            ->groupBy('year')
+            ->groupBy('month')
+            ->get();
+        $temp = array();
+        foreach ($roomsBooking as $bill):
+            $temp[$bill->month]['cnt'] = $bill->cnt;
+        endforeach;
+        $roomsBooking = $temp;
+
+        $servicesBooking = DB::table('booking')
+            ->select(DB::raw('extract(Year from created_at) as year, extract(Month from created_at) as month, count(id) as cnt'))
+            ->where('booking_type',2)
+            ->whereBetween('created_at', array($year.'-01-01 00:00:00', $year.'-12-31 23:59:59'))
+            ->orderBy('year')
+            ->orderBy('month')
+            ->groupBy('year')
+            ->groupBy('month')
+            ->get();
+        $temp = array();
+        foreach ($servicesBooking as $bill):
+            $temp[$bill->month]['cnt'] = $bill->cnt;
+        endforeach;
+        $servicesBooking = $temp;
+        return View::make('admin_interface.bills.booking',compact('roomsBooking','servicesBooking'));
+    }
+
 }
