@@ -58,6 +58,11 @@
 			@endforeach
 			</div>
 			{{ $errors->first('desired-num-radio','<div class="form-error">:message</div>') }}
+			<div id="room-count-block" class="form-input-element form-elem clearfix">
+                <label class="percent-lbl">Укажите количество номеров</label>
+                <input class="percent-input valid-required valid-numeric quantity-input" maxlength="2" value="{{ Input::old('room_count') ? Input::old('room_count') : 1 }}" name="room_count"  type="text">
+                {{ $errors->first('room_count','<div class="form-error">:message</div>') }}
+            </div>
 		</div>
 	</div>
 	<div class="booking-name">

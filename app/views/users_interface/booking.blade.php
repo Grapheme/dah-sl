@@ -43,10 +43,12 @@
 						$("#room-price-lable").show();
 						$("#room-price-block").html(rooms[val]['price']+'.-');
 						$("#room-text-block").html(rooms[val]['text']);
+						$("#room-count-block").show();
 					}else{
 						$("#room-price-lable").hide();
 						$("#room-price-block").html('');
 						$("#room-text-block").html('');
+						$("#room-count-block").hide();
 					}
 				},
 				effect : "slide"

@@ -15,5 +15,6 @@
 		</div>
 	</div>
 	@include('admin_interface.includes.scripts')
+	@yield('scripts')
 </body>
 </html>

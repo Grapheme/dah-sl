@@ -62,4 +62,42 @@ class BillsController extends \BaseController {
 		Bills::destroy($id);
 		return Redirect::action("BillsController@index");
 	}
+
+    /*------------------------------------------------ */
+
+    public function statistic($year){
+
+        $unpaidBills = DB::table('bills')
+            ->select(DB::raw('extract(Year from created_at) as year, extract(Month from created_at) as month, count(id) as cnt, sum(price) as price'))
+            ->where('paid','=','0')
+            ->whereBetween('created_at', array($year.'-01-01 00:00:00', $year.'-12-31 23:59:59'))
+            ->orderBy('year')
+            ->orderBy('month')
+            ->groupBy('year')
+            ->groupBy('month')
+            ->get();
+        $temp = array();
+        foreach ($unpaidBills as $bill):
+            $temp[$bill->month]['cnt'] = $bill->cnt;
+            $temp[$bill->month]['price'] = $bill->price;
+        endforeach;
+        $unpaidBills = $temp;
+
+        $paidBills = DB::table('bills')
+            ->select(DB::raw('extract(Year from created_at) as year, extract(Month from created_at) as month, count(id) as cnt, sum(price) as price'))
+            ->where('paid','=','1')
+            ->whereBetween('created_at', array($year.'-01-01 00:00:00', $year.'-12-31 23:59:59'))
+            ->orderBy('year')
+            ->orderBy('month')
+            ->groupBy('year')
+            ->groupBy('month')
+            ->get();
+        $temp = array();
+        foreach ($paidBills as $bill):
+            $temp[$bill->month]['cnt'] = $bill->cnt;
+            $temp[$bill->month]['price'] = $bill->price;
+        endforeach;
+        $paidBills = $temp;
+        return View::make('admin_interface.bills.statistic',compact('unpaidBills','paidBills'));
+    }
 }

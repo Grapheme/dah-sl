@@ -1,6 +1,7 @@
 @extends('admin_interface.cpanel')
 @section('content')
 {{ link_to_route('control-panel.bills.create','Создать новый счет',NULL,array("class"=>'btn btn-default')) }}
+{{ link_to_route('control-panel.statistic','Статистика',date("Y"),array("class"=>'btn btn-info')) }}
 @if($unpaidBills->count())
 <h3> Неоплаченные счета </h3>
 <table class="table table-striped">
