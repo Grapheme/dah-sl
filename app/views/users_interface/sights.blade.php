@@ -135,7 +135,7 @@
 					</div>
 					<span class="site-caption">Грот древнего<br>человека</span>
 				</a>
-				<a href="#" target="_blank" class="map-link mezmai">
+				<a href="{{url('mezmai-otdih-ceni')}}" target="_blank" class="map-link mezmai">
 					<div class="cond-container">
 						<img class="main-img" src="img/map/sites/flag.png" alt="">
 						<img class="shadow" src="img/map/sites/shadows/flag.png" alt="">

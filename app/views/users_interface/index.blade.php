@@ -87,17 +87,17 @@
 					</div>
 				</li>
 				<li class="offers-item actions">
-					<a class="index-banner-link" href="{{url('services/provedenie-svadeb');}}"></a>
+					<a class="index-banner-link" href="{{url('vechera-adygeiskoi-kuhni');}}"></a>
 					<div class="offers-bg">
-						{{ HTML::image('img/offers/00.jpg') }}
+						{{ HTML::image('img/offers/09.jpg') }}
 					</div>
 					<div class="offers-cont">
 						<div class="top-line"></div>
 						<div class="offers-item-cont">
-							<h2 class="offers-header"><span class="caps">НОМЕР</span>
+							<h2 class="offers-header"><span class="caps">Вечера</span>
 							<br>
-							для молодоженов<br>
-							В ПОДАРОК</h2>
+							адыгейской<br>
+							кухни</h2>
 						</div>
 					</div>
 					<div class="wo-line-link-container">
