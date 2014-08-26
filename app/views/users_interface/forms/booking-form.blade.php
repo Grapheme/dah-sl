@@ -83,4 +83,5 @@
 		</div>
 	</div>
 	<input class="form-submit btn-ajax-submit" type="submit" value="">
+	<p style="text-align: center">Дождитесь подтверждения бронирования по электронной почте</p>
 {{ Form::close() }}
