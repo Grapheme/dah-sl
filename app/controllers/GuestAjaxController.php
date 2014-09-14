@@ -12,9 +12,15 @@ class GuestAjaxController extends BaseController {
 			if($validator->fails()):
 				$this->json_request['responseText'] = 'Неверно заполнены поля';
 			else:
+
+                $input = Input::all();
+                $input['booking_type'] = 1;
+                Booking::create($input);
+
 				Mail::send('emails.reservation',array('data'=>Input::all()),function($message){
 					$message->from('dah-sl@yandex.ru','Даховская Слобода');
-					$message->to('dahovskaya_sloboda@rambler.ru')->cc('support@grapheme.ru')->subject('Даховская Слобода - бронирование номера');
+//					$message->to('dahovskaya_sloboda@rambler.ru')->cc('support@grapheme.ru')->subject('Даховская Слобода - бронирование номера');
+					$message->to('vkharseev@gmail.com')->subject('Даховская Слобода - бронирование номера');
 				});
 				$this->json_request['responseText'] = 'Заявка на бронирование номера отправлена';
 				$this->json_request['status'] = TRUE;
@@ -33,9 +39,15 @@ class GuestAjaxController extends BaseController {
 			if($validator->fails()):
 				$this->json_request['responseText'] = 'Неверно заполнены поля';
 			else:
+
+                $input = Input::all();
+                $input['booking_type'] = 2;
+                Booking::create($input);
+
 				Mail::send('emails.services-booking',array('data'=>Input::all()),function($message){
 					$message->from('dah-sl@yandex.ru','Даховская Слобода');
-					$message->to('dahovskaya_sloboda@rambler.ru')->cc('support@grapheme.ru')->subject('Даховская Слобода - заявка');
+                    $message->to('vkharseev@gmail.com')->subject('Даховская Слобода - бронирование номера');
+//					$message->to('dahovskaya_sloboda@rambler.ru')->cc('support@grapheme.ru')->subject('Даховская Слобода - заявка');
 				});
 				$this->json_request['responseText'] = 'Заявка на бронирование услуги отправлена';
 				$this->json_request['status'] = TRUE;

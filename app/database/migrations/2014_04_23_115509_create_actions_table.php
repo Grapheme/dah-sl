@@ -10,8 +10,7 @@ class CreateActionsTable extends Migration {
 	 *
 	 * @return void
 	 */
-	public function up()
-	{
+	public function up(){
 		Schema::create('actions', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('name');

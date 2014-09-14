@@ -1,6 +1,15 @@
 @extends('admin_interface.cpanel')
+@section('style')
+<style>
+    .margin-left-10 {
+        margin-left: 10px;
+    }
+</style>
+@stop
 @section('content')
 {{ link_to_route('control-panel.bills.create','Создать новый счет',NULL,array("class"=>'btn btn-default')) }}
+{{ link_to_route('control-panel.statistic.bills','Статистика счетов',date("Y"),array("class"=>'btn btn-info margin-left-10')) }}
+{{ link_to_route('control-panel.statistic.booking','Статистика заказов',date("Y"),array("class"=>'btn btn-info margin-left-10')) }}
 @if($unpaidBills->count())
 <h3> Неоплаченные счета </h3>
 <table class="table table-striped">
