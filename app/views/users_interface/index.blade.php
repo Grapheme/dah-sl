@@ -87,17 +87,17 @@
 					</div>
 				</li>
 				<li class="offers-item actions">
-					<a class="index-banner-link" href="{{url('vechera-adygeiskoi-kuhni');}}"></a>
+					<a class="index-banner-link" href="{{url('noyabr-v-dahovskoi-slobode');}}"></a>
 					<div class="offers-bg">
-						{{ HTML::image('img/offers/09.jpg') }}
+						{{ HTML::image('img/offers/10.jpg') }}
 					</div>
 					<div class="offers-cont">
 						<div class="top-line"></div>
 						<div class="offers-item-cont">
-							<h2 class="offers-header"><span class="caps">Вечера</span>
+							<h2 class="offers-header"><span class="caps">Ноябрь</span>
 							<br>
-							адыгейской<br>
-							кухни</h2>
+							в Даховской<br>
+							слободе</h2>
 						</div>
 					</div>
 					<div class="wo-line-link-container">

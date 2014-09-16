@@ -83,5 +83,8 @@
 		</div>
 	</div>
 	<input class="form-submit btn-ajax-submit" type="submit" value="">
+	<div class="loader">
+	    <img src="http://dah-sl.ru/img/gif-loader.gif">
+	</div>
 	<p style="text-align: center">Дождитесь подтверждения бронирования по электронной почте</p>
 {{ Form::close() }}

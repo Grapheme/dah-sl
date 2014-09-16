@@ -291,6 +291,22 @@ height: 30px;}
 .room .reserve,
 .single-service .reserve,
 .booking-main-form .form-submit { outline: none; width: 239px; height: 46px; border: none; margin: 18px auto 0; background: url(../img/sloboda_sprite.png) -212px -307px no-repeat; }
+.booking-main-form .loader {
+	text-align: center;
+	display: none;
+	width: 239px;
+	height: 46px;
+	margin: 1em auto;
+}
+.booking-main-form .loader img {
+	height: 100%;
+}
+.booking-main-form.sended .loader {
+	display: block;
+}
+.booking-main-form.sended .form-submit {
+	display: none;
+}
 .reserve {display: block;text-decoration: none;}
 .booking-form .form-submit:hover,
 .room .reserve:hover,
