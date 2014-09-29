@@ -69,14 +69,16 @@ $(function(){
 		var options = {target: null,beforeSubmit: {},dataType:'json',type:'post'};
 		options.beforeSubmit = function(formData,jqForm,options){
 			resetErrors(_form);
+			_form.addClass('sended');
 			if(validation(_form) === false){
 				$(".booking-main-error").removeClass('hidden');
+				_form.removeClass('sended');
 				return false;
 			}
 		}
 		options.success = function(response,status,xhr,jqForm){
 			if(response.status){
-				$(_form).replaceWith('<div class="request-mail">'+response.responseText+'</div>');
+				$(_form).removeClass('sended').replaceWith('<div class="request-mail">'+response.responseText+'</div>');
 				$('.leave-a-msg').hide();
 				setTimeout( function(){ $('.request-mail').css( 'padding', '1.5em 0 2em'); }, 400);
 			}else{
