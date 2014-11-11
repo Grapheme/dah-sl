@@ -18,6 +18,9 @@
 				<h1>Номера</h1>
 				<div class="right-wave"></div>
 			</div>
+			<div style="margin: 20px 20px 20px 28px;">
+				<img style="margin: 0 10px 0 0;" src="{{asset('img/book_icon.png');}}"><a class="typical-link" href="http://dah-sl.ru/pravila-bronirovaniya-i-oplaty">Правила бронирования и оплаты услуг</a>
+			</div>			
 			<ul class="room-list">
 			@foreach($rooms as $room)
 				<li class="room-item{{($room->id == 3)?' family-room':''}} clearfix">

@@ -78,7 +78,7 @@ $(function(){
 		}
 		options.success = function(response,status,xhr,jqForm){
 			if(response.status){
-				$(_form).removeClass('sended').replaceWith('<div class="request-mail">'+response.responseText+'</div>');
+				$(_form).removeClass('sended').replaceWith('<div class="request-mail">'+response.responseText+'<p style="text-align: center">Дождитесь подтверждения бронирования по электронной почте</div>');
 				$('.leave-a-msg').hide();
 				setTimeout( function(){ $('.request-mail').css( 'padding', '1.5em 0 2em'); }, 400);
 			}else{
