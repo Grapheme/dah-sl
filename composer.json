@@ -6,8 +6,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "*",
-		"intervention/image": "dev-master",
-		"barryvdh/laravel-ide-helper": "1.x-dev"
+		"intervention/image": "*",
+		"barryvdh/laravel-ide-helper": "*"
 	},
 	"autoload": {
 		"classmap": [

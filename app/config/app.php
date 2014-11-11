@@ -7,7 +7,7 @@ return array(
 	'use_googleapis' => TRUE,
 	'default_meta' => 'Даховская слобода',
 
-	'debug' => true,
+	'debug' => false,
 	'url' => 'http://dah-sl.ru/',
 	'timezone' => 'UTC',
 	'locale' => 'en',
