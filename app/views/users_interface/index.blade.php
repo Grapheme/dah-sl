@@ -96,6 +96,8 @@
 						<div class="offers-item-cont">
 							<h2 class="offers-header"><span class="caps">Новый год</span>
 							<br>
+							и Рождество
+							<br>
 							в Даховской<br>
 							слободе</h2>
 						</div>
