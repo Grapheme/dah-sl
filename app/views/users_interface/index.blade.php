@@ -87,7 +87,7 @@
 					</div>
 				</li>
 				<li class="offers-item actions">
-					<a class="index-banner-link" href="{{url('novii-god-2015');}}"></a>
+					<a class="index-banner-link" href="{{url('actions');}}"></a>
 					<div class="offers-bg">
 						{{ HTML::image('img/offers/11.jpg') }}
 					</div>
@@ -95,6 +95,8 @@
 						<div class="top-line"></div>
 						<div class="offers-item-cont">
 							<h2 class="offers-header"><span class="caps">Новый год</span>
+							<br>
+							и Рождество
 							<br>
 							в Даховской<br>
 							слободе</h2>
