@@ -97,5 +97,9 @@ Route::group(array('before'=>'admin.auth'),function(){
     Route::resource('control-panel/actions', 'ActionsController');
 
 });
+
+Route::get('redactor/get-uploaded-images', 'DownloadsController@redactorUploadedImages');
+Route::post('redactor/upload', 'DownloadsController@redactorUploadImage');
+
 Route::resource('actions', 'GuestController@showActions');
 Route::get("{url}",'GuestController@templates');
