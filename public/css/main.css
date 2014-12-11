@@ -127,12 +127,13 @@ h3 { text-align: center; }
 h4 { text-align: center; margin: 24px 0;}
 h2, h3, h4 { font-size: 1.5em; margin: 36px auto 24px; }
 h1 a, h2 a, h3 a { font-weight: inherit; border: none; text-decoration: none; }
+h1.long { font-size: 38px !important; letter-spacing: 2px !important; }
 
 .wrapper { width: 96%; max-width: 1146px; min-width: 320px; margin: 0 auto; padding: 34px 2% 2%; }
 .site-link { color: #6C4742; }
 .site-link:hover { text-decoration: none; }
 	header { height: 270px; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
-	.logo { position: absolute; top: -45%; left: 0; width: 206px; height: 229px; margin: 0.67em 0; text-indent: -9999px; background: url(../img/sloboda_sprite.png) no-repeat; font-size: 2em; }
+	.logo { display: inline-block; position: absolute; top: -45%; left: 0; width: 206px; height: 229px; margin: 0.67em 0; text-indent: -9999px; background: url(../img/sloboda_sprite.png) no-repeat; font-size: 2em; }
 	.htg-there { float: left; margin: -5px 10px 0 18px; padding: 5px 0 5px 40px; background: url(../img/sloboda_sprite.png) -422px 0 no-repeat; }
 	.htg-there.payment-link { background-position: 0 -517px; }
 		.htg-there-link { font-style: italic; color: #6C4742; text-decoration: none; border-bottom: 1px solid #6C4742; }
@@ -428,7 +429,7 @@ section.sights { margin: 70px 0 0; }
 /*-------------------------------Section facilities---------------------------- */
 
 section.facilities { margin: 128px 0 0; padding: 0 5%; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6);}
-.facilities-header { font: 2em 'jaf-zalamander', serif; margin: 0; text-transform: uppercase; text-align: center; }
+.facilities-header { font: 2em 'jaf-zalamander', serif; margin: 0; text-transform: uppercase; text-align: center; max-width: none; }
 .facilities-desc { margin: 0 3%; font-size: 1em; text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.6); }
 .sloboda-column { float: left; width: 48%; }
 .sloboda-column.left-column { margin: 0 2% 0 0; }
@@ -467,6 +468,18 @@ footer > .social { margin: 15px 0 0; font: 10px 'intro-bold', sans-serif; text-t
 .contacts .waves,
 .facilities-desc { max-width: 980px; margin: 0 auto 2.5em; }
 .services-section .offers-item-cont { opacity: 0; padding-top: 5.5em; }
+table.prices-table {
+	margin: 1em auto;
+	max-width: 960px;
+}
+table.prices-table td, table.prices-table th {
+	padding: 0.5em 1em;
+	text-align: left;
+	border-bottom: 1px solid;
+}
+table.prices-table th {
+	padding-bottom: 1.5em;
+}
 /*-------------------------------Section weddings---------------------------- */
 
 .weddings { max-width: 980px; margin: 0 auto; }
@@ -1146,7 +1159,7 @@ span.normal { font-style: normal; }
 	.header-wo-waves { font-size: 36px; }
 	.page-description { font-size: 1em; }
 /*---------------------------------Mobile menu styles----------------------------- */
-	.logo { top: -35px; height: 158px; background: url("../img/mob_logo.png") no-repeat scroll center center; }
+	.logo { display: inline-block; top: -35px; height: 158px; background: url("../img/mob_logo.png") no-repeat scroll center center; }
 
 	#mobile-trigger { display: block; }
 	.mobile-nav { margin: 0; padding: 10px 10px 10px 25px; background: #FFF; }

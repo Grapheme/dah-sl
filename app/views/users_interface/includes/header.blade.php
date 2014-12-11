@@ -29,9 +29,9 @@
 			</li>
 			<li class="nav-item main-logo">
 			@if(Request::is('/'))
-				<h1 class="logo">Даховская Слобода</h1>
+				<span class="logo">Даховская Слобода</span>
 			@else:
-				<a href="{{url('/');}}"><h1 class="logo">Даховская Слобода</h1></a>
+				<a href="{{url('/');}}"><span class="logo">Даховская Слобода</span></a>
 			@endif
 			</li>
 			<li class="nav-item right-item cafe{{(Request::is('reviews'))?' active-nav-item':'';}}">
