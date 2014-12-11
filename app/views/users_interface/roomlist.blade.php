@@ -18,8 +18,9 @@
 				<h1>Номера</h1>
 				<div class="right-wave"></div>
 			</div>
-			<div style="margin: 20px 20px 20px 28px;">
-				<img style="margin: 0 10px 0 0;" src="{{asset('img/book_icon.png');}}"><a class="typical-link" href="http://dah-sl.ru/pravila-bronirovaniya-i-oplaty">Правила бронирования и оплаты услуг</a>
+			<div style="margin: 30px 20px 40px 28px;">
+				<img style="margin: 0 10px 0 0;" src="{{asset('img/book_icon.png');}}"><a class="typical-link" href="http://dah-sl.ru/prices_new">Прейскурант цен на проживание</a>
+				<img style="margin: 0 10px 0 40px;" src="{{asset('img/book_icon.png');}}"><a class="typical-link" href="http://dah-sl.ru/pravila-bronirovaniya-i-oplaty">Правила бронирования и оплаты услуг</a>
 			</div>			
 			<ul class="room-list">
 			@foreach($rooms as $room)
@@ -37,7 +38,7 @@
 							<div class="triangle top-angle"></div>
 							<div class="triangle bottom-angle"></div>
 							<div class="triangle shadow-angle"></div>
-							<a href="{{url('rooms/booking',array($room->id));}}" class="reserve" title="Бронировать номер">{{$room->price}}.–</a>
+							<a href="{{url('rooms/booking',array($room->id));}}" class="reserve" title="Бронировать номер"><smal>от</smal> {{$room->price}}.–</a>
 						</div>
 						<div class="room-order">
 							<a href="{{('about#housing-'.$room->housing);}}" target="_blank" class="htg-there-link">корпус № {{$room->housing}}</a>

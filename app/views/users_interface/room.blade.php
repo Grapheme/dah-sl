@@ -42,8 +42,11 @@
 						Стоимость номера в сутки:
 					</div>
 					<div class="single-price">
-						{{{$room->price}}}.-
+						<small>от</small> {{{$room->price}}}.- 
 					</div>
+					<p style="text-align: center;">
+						<a href="http://dah-sl.ru/prices_new">прейскурант цен на 2015 г.</a> <br>
+					</p>
 					<a href="{{url('rooms/booking',array($room->id));}}" class="reserve">&nbsp;</a>
 				</div>
 				<div class="single-wave-item"></div>

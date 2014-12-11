@@ -42,21 +42,23 @@
 				@endforeach
 				</select>
 			</div>
+			<br>
 			<label id="room-price-lable" class="percent-lbl">Стоимость номера в сутки</label>
-			<span id="room-price-block" class="big-zalamander">
+			<span id="room-price-block" class="big-zalamander"><small>от</small> 
 			@foreach($rooms as $room)
 				@if($room->id == $room_id)
 					{{$room->price}}.-
 				@endif
 			@endforeach
-			</span>
-			<div id="room-text-block">
+			</span> &nbsp;&nbsp; <a href="http://dah-sl.ru/prices_new">прейскурант цен на 2015 г.</a>
+			<br><br>
+			<div id="room-text-block"><em>
 			@foreach($rooms as $room)
 				@if($room->id == $room_id)
 					{{$room->small_description}}
 				@endif
 			@endforeach
-			</div>
+			</em></div>
 			{{ $errors->first('desired-num-radio','<div class="form-error">:message</div>') }}
 			<div id="room-count-block" class="form-input-element form-elem clearfix">
                 <label class="percent-lbl">Укажите количество номеров</label>

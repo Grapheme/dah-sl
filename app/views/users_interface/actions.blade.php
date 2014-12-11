@@ -10,9 +10,17 @@
 	@include('users_interface.includes.ie7')
 	<article class="wrapper">
 		@include('users_interface.includes.header')
+        
+        <div class="services-section">
+            <div class="waves">
+                <div class="left-wave"></div>
+                <h1>Новости и акции</h1>
+                <div class="right-wave"></div>
+            </div>
+        </div>
 
         @if(!empty($actions))
-        <ul class="offers-list services-section" style="padding-top: 50px">
+        <ul class="offers-list services-section">
         @foreach($actions as $action)
             <li class="offers-item meal">
             <div class="offers-bg" style="overflow: hidden; background:url({{ $action->image }}) 50% 50%; background-repeat: no-repeat; background-size: cover;">
