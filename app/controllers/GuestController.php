@@ -76,7 +76,13 @@ class GuestController extends BaseController {
 
 	public function room(){
 
-		if($page = Page::where('page_url',Request::path())->where('group','rooms')->first()):
+		if($segments = Request::segments()):
+			$url = array_pop($segments);
+		else:
+			$url = Request::path();
+		endif;
+
+		if($page = Page::where('page_url',$url)->where('group','rooms')->first()):
 			if($room = Room::find($page->item_id)):
 				$images = self::getImagesItem('rooms',$room->id);
 				return View::make('users_interface.room',compact('room','page','images'));
