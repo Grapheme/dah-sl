@@ -33,7 +33,7 @@
 						</span>
 					</div>
 					<div class="room-item-right">
-						<div class="room-type big-zalamander"><a href="{{url($room->page_url);}}" class="room-link">{{$room->title}}</a></div>
+						<div class="room-type big-zalamander"><a href="{{url('rooms/'.$room->page_url);}}" class="room-link">{{$room->title}}</a></div>
 						<div class="room-price big-zalamander flag">
 							<div class="triangle top-angle"></div>
 							<div class="triangle bottom-angle"></div>
