@@ -106,7 +106,13 @@ class GuestController extends BaseController {
 
 	public function restaurant(){
 
-		if($page = Page::where('page_url',Request::path())->first()):
+		if($segments = Request::segments()):
+			$url = array_pop($segments);
+		else:
+			$url = Request::path();
+		endif;
+
+		if($page = Page::where('page_url',$url)->first()):
 			$images = self::getImagesItem('pages',$page->id);
 			return View::make('users_interface.restaurant',array('content'=>$page['page_content'],'images'=>$images));
 		else:
@@ -152,9 +158,7 @@ class GuestController extends BaseController {
     	foreach($actions as $a => $action) {
             $images = self::getImagesItem('actions', $action->id);
             if (!is_object($images->first())) {
-            	## �� ���������� ����� ��� ��������
                 unset($actions[$a]);
-                #continue;
             } else {
                 $action->image = $images->first()->image['image'];
                 $actions[$a] = $action;
