@@ -18,9 +18,12 @@ class Page extends Eloquent {
 	}
 	
 	public static function getField($field,$url = 'home'){
-		
 		if(!Request::is('/')):
-			$url = Request::path();
+			if($segments = Request::segments()):
+				$url = array_pop($segments);
+			else:
+				$url = Request::path();
+			endif;
 		endif;
 		$page = self::where('page_url',$url)->first();
 		if(isset($page->$field)):

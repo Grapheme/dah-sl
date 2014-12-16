@@ -30,14 +30,12 @@ class GuestController extends BaseController {
 	}
 
 	public function services(){
-
 		$services =  DB::table('services')->join('pages','services.id','=','pages.item_id')
 			->where('pages.group','services')->orderBy('services.sort')->get(array('services.*', 'pages.page_url'));
 		return View::make('users_interface.services',compact('services'));
 	}
 
 	public function service($title){
-
 		if($page = Page::where('page_url',Request::segment(2))->where('group','services')->first()):
 			if($service = Service::find($page->item_id)):
 				$images = self::getImagesItem('services',$service->id);
