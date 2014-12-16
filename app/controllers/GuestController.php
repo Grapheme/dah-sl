@@ -20,7 +20,7 @@ class GuestController extends BaseController {
 
 	public function templates($url){
 
-		if($page = Page::where('page_url',$url)->first()):
+		if($page = Page::where('page_url',$url)->where('group','static')->first()):
 			$images = self::getImagesItem('pages',$page->id);
 			return View::make('users_interface.templates',array('content'=>$page['page_content'],'images'=>$images));
 		else:
