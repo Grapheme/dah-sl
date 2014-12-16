@@ -26,7 +26,7 @@
 			@foreach($rooms as $room)
 				<li class="room-item{{($room->id == 3)?' family-room':''}} clearfix">
 					<div class="room-item-left">
-						<a class="room-imglink" href="{{url($room->page_url)}}"></a>
+						<a class="room-imglink" href="{{url('rooms/'.$room->page_url)}}"></a>
 						{{HTML::image($room->image)}}
 						<span class="room-pict-capt">
 							{{plural::pluralWords($room->place,array('место','места','мест'),'<span class="capt-num">','</span>')}}
