@@ -22,6 +22,9 @@ class BillsController extends \BaseController {
 		if($validator->fails()):
 			return Redirect::action('BillsController@create')->withErrors($validator)->withInput();
 		else:
+            if(Bills::where('id',Input::get('id'))->exists()):
+                return Redirect::action('BillsController@edit',Input::get('id'))->withInput()->with('message','Счет уже существует');
+            endif;
 			$bill = new Bills;
 			$bill->id = Input::get('id');
 			$bill->payer = Input::get('payer');
