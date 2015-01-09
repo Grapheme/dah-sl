@@ -136,6 +136,8 @@ h1.long { font-size: 38px !important; letter-spacing: 2px !important; }
 	.logo { display: inline-block; position: absolute; top: -45%; left: 0; width: 206px; height: 229px; margin: 0.67em 0; text-indent: -9999px; background: url(../img/sloboda_sprite.png) no-repeat; font-size: 2em; }
 	.htg-there { float: left; margin: -5px 10px 0 18px; padding: 5px 0 5px 40px; background: url(../img/sloboda_sprite.png) -422px 0 no-repeat; }
 	.htg-there.payment-link { background-position: 0 -517px; }
+	.htg-there.photo-link { background-position: 0 -547px; margin-top: 0px; padding-top: 0px; }
+	.htg-there.photo-link a { color: #02a3c0; border-bottom: 4px double #02a3c0; }
 		.htg-there-link { font-style: italic; color: #6C4742; text-decoration: none; border-bottom: 1px solid #6C4742; }
 		.htg-there-link:hover { border-color: #00A2BF; color: #00A2BF; }
 	.contact-nums { position: relative; margin: 0 28px 0 0; float: right; }
