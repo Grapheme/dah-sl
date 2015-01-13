@@ -22,7 +22,7 @@
 			@endif
 			<div class="waves">
 				<div class="left-wave"></div>
-				<h1>{{{$page->page_h1}}}</h1>
+				<h1 class="room">{{{$page->page_h1}}}</h1>
 				<div class="right-wave"></div>
 			</div>
 			<div class="roomcount">
