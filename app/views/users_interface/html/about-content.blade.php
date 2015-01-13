@@ -32,6 +32,7 @@
 			<a id="housing-1" class="housing-1-spot spot-link fancybox" href="<?=URL::to('img/photos/complex1.jpg');?>">Корпус №1</a>
 			<a id="zoo" class="zoo-spot spot-link fancybox" href="<?=URL::to('img/photos/zoo.jpg');?>">Зоопарк</a>
 			<a id="serv" class="serv-spot spot-link fancybox" href="<?=URL::to('img/photos/slujebnoe-zdanie.jpg');?>">Корпус №4</a>
+			<a id="serv5" class="serv5-spot spot-link fancybox" href="<?=URL::to('img/photos/comf-3.jpg');?>">Корпус №5</a>
 		</div>
 	</div>
 </section>

@@ -10,7 +10,7 @@
 	</div>
 	<div class="contact-nums">
 		<div class="tel-sign">
-			Бронирование номеров с 8 до 22 часов:
+			Бронирование с 8 до 22 часов:
 		</div>
 		<address>
 			<a class="telephone-link" href="tel:+79184223862">8(918) 422-38-62</a>
