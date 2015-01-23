@@ -695,6 +695,9 @@ table.prices-table th {
 .zoo-spot.spot-link { top: 59.1%; left: 74.5%; }
 .serv-spot.spot-link { top: 29%; left: 73%; }
 .serv5-spot.spot-link { top: 7%; left: 34%; }
+.alcove-small-spot.spot-link { left: 72.4%; top: 15.2%; }
+.alcove-big-spot.spot-link { left: 78.4%; top: 23.2%; }
+.alcove-wed-spot.spot-link { left: 38.4%; top: 65.2%; }
 /*-------------------------------Section contacts-------------------------------- */
 
 .payment .page-description { font-size: 1em; }
