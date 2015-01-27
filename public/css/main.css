@@ -317,6 +317,33 @@ height: 30px;}
 .booking-main-form .form-submit:hover { opacity: .8 }
 .booking-form .form-text { padding: 0 10px; border: 1px solid #bcb1a7; font-family: 'pt-serif', serif; color: #6C4742; }
 
+/*-------------------------------Section news---------------------------------- */
+.news {
+ 	margin: 5rem 0 10rem; 
+}    
+.news-ul {
+	max-width: 980px;
+ 	margin: 3rem auto 0;
+    padding: 0;
+    list-style: none;
+}
+.news-li {
+    float: left;
+ 	width: 32.333%;
+    margin: 0 1% 0 0;
+}
+.news-date {
+    margin: 0 0 1rem;
+    font-style: italic;
+}
+.news-link {
+	-webkit-transition: all .4s ease;
+	transition: all .4s ease;
+}
+.news-link:hover {
+    color: #00A2BF;
+}
+
 /*-------------------------------Section booking------------------------------- */
 .booking-section { max-width: 980px; margin: 0 auto; background-color: rgba(230, 211, 177, .5); }
 .booking-section .waves { max-width: 666px; margin: 0 auto; padding: 2.5em 0; border-bottom: 2px groove #FFF3E5; background: none; }

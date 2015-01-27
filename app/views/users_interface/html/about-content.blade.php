@@ -36,7 +36,7 @@
 
 			<a id="alcove-small" class="alcove-small-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_small.jpg');?>">Беседка маленькая</a>
 			<a id="alcove-big" class="alcove-big-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_big.jpg');?>">Беседка большая</a>
-			<a id="alcove-wed" class="alcove-web-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_wed.jpg');?>">Беседка свадебная</a>
+			<a id="alcove-wed" class="alcove-wed-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_wed.jpg');?>">Беседка свадебная</a>
 
 		</div>
 	</div>
