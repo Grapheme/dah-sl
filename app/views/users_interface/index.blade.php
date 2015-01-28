@@ -129,44 +129,27 @@
 				</li>
 			</ul>
 		</section>
-
-		<section class="news hidden">
+		@if($news->count())
+		<section class="news">
 			<div class="waves">
 				<div class="left-wave"></div>
 				<h2>Новости</h2>
 				<div class="right-wave"></div>
 			</div>
 	  		<ul class="news-ul clearfix">
+			@foreach($news as $new)
 		        <li class="news-li">
 		        	<div class="news-date">
-		            	15 июля 2012
+						{{ myDateTime::SwapDotDateWithoutTime($new->date_publication) }}
 		          	</div>
-		          	<a class="news-link" href="#">
-		            	Торжественная церемония открытия
-		            	нового туристического объекта
+		          	<a class="news-link" href="{{ URL::route('show-news',$new->id.'-'.BaseController::stringTranslite($new->title,100)) }}">
+		            	{{ $new->title }}
 		          	</a>
 		        </li>
-		        <li class="news-li">
-		        	<div class="news-date">
-		            	15 июля 2012
-		          	</div>
-		          	<a class="news-link" href="#">
-		            	Торжественная церемония открытия
-		            	нового туристического объекта
-		          	</a>
-		        </li>
-		        <li class="news-li">
-		        	<div class="news-date">
-		                15 июля 2012
-		            </div>
-		          	<a class="news-link" href="#">
-		            	Торжественная церемония открытия
-		            	нового туристического объекта
-		          	</a>
-		        </li>
-	  		</ul>	
+			@endforeach
+	  		</ul>
 		</section>
-
+		@endif
 		<section class="sights">
 			<div class="waves">
 				<div class="left-wave"></div>

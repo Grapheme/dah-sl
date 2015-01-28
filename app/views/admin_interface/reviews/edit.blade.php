@@ -1,7 +1,7 @@
 @extends('admin_interface.cpanel-redactor')
 @section('content')
 <a class="btn btn-default" href="{{ URL::previous() }}">&larr; Вернуться назад</a>
-<h3>Редактирование номера</h3>
+<h3>Редактирование отзыва</h3>
 {{ Form::model($review,array('method'=>'PATCH','route'=>array('control-panel.reviews.update',$review->id),'class'=>'form-horizontal','role'=>"form",'files'=>TRUE)) }}
 	<div class="form-group">
 		{{ Form::label('author','Автор:',array('class'=>'control-label')) }}

@@ -21,6 +21,7 @@ Route::get('services','GuestController@services');
 Route::get('services/{title}','GuestController@service');
 
 Route::get('reviews','GuestController@reviews');
+Route::get('news/{news_title}', array('as' => 'show-news', 'uses' => 'GuestController@news'));
 
 Route::get('contacts', function(){return View::make('users_interface.contacts');});
 Route::get('sights','GuestController@sights');
@@ -81,6 +82,8 @@ Route::group(array('before'=>'admin.auth'),function(){
 	Route::resource('control-panel/room_properties','Room_propertiesController');
 	/*=================== REVIEWS ==================*/
 	Route::resource('control-panel/reviews','ReviewsController');
+	/*==================== NEWS ====================*/
+	Route::resource('control-panel/news','NewsController');
 	/*==================== PAGES ===================*/
 	Route::resource('control-panel/pages','PagesController');
 	/*================== SERVICES ==================*/

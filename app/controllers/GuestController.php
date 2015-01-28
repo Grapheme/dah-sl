@@ -11,11 +11,12 @@ class GuestController extends BaseController {
 
 		$sights = Sight::orderBy('sort')->get();
 		$rooms = Room::orderBy('sort')->get();
+		$news = News::orderBy('sort','ASC')->orderBy('date_publication','DESC')->limit(3)->get();
 		$images = array();
 		if($page = Page::where('page_url','home')->first()):
 			$images = self::getImagesItem('pages',$page->id);
 		endif;
-		return View::make('users_interface.index',compact('sights','rooms','images'));
+		return View::make('users_interface.index',compact('sights','rooms','images','news'));
 	}
 
 	public function templates($url){
@@ -102,6 +103,15 @@ class GuestController extends BaseController {
 		endif;
 		$raiting = $this->raiting;
 		return View::make('users_interface.reviews',compact('reviews','raiting','more'));
+	}
+
+	public function news($news_title){
+
+		$news = News::where('id',(int)$news_title)->first();
+		if (is_null($news)):
+			App::abort(404);
+		endif;
+		return View::make('users_interface.news',compact('news'));
 	}
 
 	public function restaurant(){
