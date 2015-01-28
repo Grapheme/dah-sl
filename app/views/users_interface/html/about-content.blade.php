@@ -33,6 +33,11 @@
 			<a id="zoo" class="zoo-spot spot-link fancybox" href="<?=URL::to('img/photos/zoo.jpg');?>">Зоопарк</a>
 			<a id="serv" class="serv-spot spot-link fancybox" href="<?=URL::to('img/photos/slujebnoe-zdanie.jpg');?>">Корпус №4</a>
 			<a id="serv5" class="serv5-spot spot-link fancybox" href="<?=URL::to('img/photos/comf-3.jpg');?>">Корпус №5</a>
+
+			<a id="alcove-small" class="alcove-small-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_small.jpg');?>">Беседка маленькая</a>
+			<a id="alcove-big" class="alcove-big-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_big.jpg');?>">Беседка большая</a>
+			<a id="alcove-wed" class="alcove-wed-spot spot-link fancybox" href="<?=URL::to('img/photos/alcove_wed.jpg');?>">Беседка свадебная</a>
+
 		</div>
 	</div>
 </section>
