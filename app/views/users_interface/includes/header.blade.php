@@ -5,12 +5,14 @@
 	<div class="htg-there payment-link">
 		<a class="htg-there-link payment-link" href="{{url('payment');}}">Оплата брони</a>
 	</div>
+	<!--
 	<div class="htg-there photo-link">
 		<a class="htg-there-link" target="_blank" href=" https://www.dropbox.com/sh/wqem2poddbsc2ap/AAAhJJb3Tt2H_vOv9bxwFc-ha?dl=0">Фото 2015</a>
 	</div>
+	-->
 	<div class="contact-nums">
 		<div class="tel-sign">
-			Бронирование с 8 до 22 часов:
+			Бронирование с 8 до 20 часов:
 		</div>
 		<address>
 			<a class="telephone-link" href="tel:+79184223862">8(918) 422-38-62</a>
