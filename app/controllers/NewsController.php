@@ -58,7 +58,8 @@ class NewsController extends BaseController {
 	}
 
 	public function destroy($id){
-		
+
+		File::delete(getcwd().'/'.$this->news->find($id)->image);
 		$this->news->find($id)->delete();
 		return Redirect::route('control-panel.news.index');
 	}
