@@ -27,7 +27,7 @@
                 <div class="right-wave"></div>
             </div>
             <div class="page-description">
-                {{ $news->previrew }}
+                {{ $news->preview }}
             </div>
             {{ $news->content }}
         </div>
