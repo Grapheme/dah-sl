@@ -13,6 +13,9 @@
 		{{ Form::label('content','Текст отзыва:',array('class'=>'control-label')) }}
 		{{ Form::textarea('content',NULL,array('class'=>'form-control redactor')) }}
 
+		{{ Form::label('file','Изображение:',array('class'=>'control-label')) }}
+		{{ Form::file('file') }}
+
 		{{ Form::label('sort','Порядковый номер:',array('class'=>'control-label')) }}
 		{{ Form::text('sort',NULL,array('class'=>'form-control')) }}
 	</div>

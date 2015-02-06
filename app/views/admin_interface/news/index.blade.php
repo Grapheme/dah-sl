@@ -25,7 +25,7 @@
 			{{ Form::close() }}
 			</td>
 			<td>{{ $new->sort }}</td>
-			<td>{{ $new->title }}</td>
+			<td><a href="{{ URL::route('show-news',$new->id.'-'.BaseController::stringTranslite($new->title,100)) }}" target="_blank">{{ $new->title }}</a></td>
 			<td>{{ myDateTime::SwapDotDateWithTime($new->date_publication) }}</td>
 		</tr>
 	@endforeach

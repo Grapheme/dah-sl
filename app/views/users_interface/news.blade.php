@@ -10,11 +10,27 @@
 @include('users_interface.includes.ie7')
 <article class="wrapper">
     @include('users_interface.includes.header')
-    <section class="clearfix">
-        <h1>{{ $news->title }}</h1>
+    @if(!empty($news->image))
+    <section class="room">
+        <section class="index-slideshow valentine-slide">
+            <div class="fotorama" data-autoplay="5000" data-loop="true" data-fit="cover">
+                {{ HTML::image($news->image,$news->title) }}
+            </div>
+        </section>
     </section>
+    @endif
     <section class="clearfix">
-        {{ $news->content }}
+        <div class="restaurant">
+            <div class="waves">
+                <div class="left-wave"></div>
+                <h1 class="long">{{ $news->title }}</h1>
+                <div class="right-wave"></div>
+            </div>
+            <div class="page-description">
+                {{ $news->previrew }}
+            </div>
+            {{ $news->content }}
+        </div>
     </section>
     @include('users_interface.includes.footer')
 </article>

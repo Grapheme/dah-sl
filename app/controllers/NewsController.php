@@ -71,6 +71,11 @@ class NewsController extends BaseController {
 		$news->title = Input::get('title');
 		$news->preview = Input::get('preview');
 		$news->content = Input::get('content');
+		if(Input::hasFile('file')):
+			$fileName = str_random(16).'.'.Input::file('file')->getClientOriginalExtension();
+			Input::file('file')->move(getcwd().'/download',$fileName);
+			$news->image = 'download/'.$fileName;
+		endif;
 		$news->sort = Input::get('sort');
 		$news->date_publication = Input::get('date_publication') == '' ? date("Y-m-d H:i:s") : Input::get('date_publication');
 		$news->save();
