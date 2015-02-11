@@ -19,7 +19,7 @@
 			</li>
 		-->
 			<li class="social-links-item twitter">
-				<a href="https://twitter.com/dahsloboda" title=""></a>
+				<a href="https://twitter.com/Dah_Sloboda" title=""></a>
 			</li>
 			<li class="social-links-item vk">
 				<a href="http://vk.com/club48337264" title=""></a>
