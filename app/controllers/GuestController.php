@@ -108,10 +108,13 @@ class GuestController extends BaseController {
 	public function news($news_title){
 
 		$news = News::where('id',(int)$news_title)->first();
+        $images = Image::where('group','news')->where('item_id',(int)$news_title)->get();
 		if (is_null($news)):
 			App::abort(404);
 		endif;
-		return View::make('users_interface.news',compact('news'));
+//        print_r($images->toArray());
+//        exit;
+		return View::make('users_interface.news',compact('news','images'));
 	}
 
 	public function restaurant(){

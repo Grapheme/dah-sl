@@ -10,7 +10,23 @@
 @include('users_interface.includes.ie7')
 <article class="wrapper">
     @include('users_interface.includes.header')
-    @if(!empty($news->image))
+@if($images->count())
+    <section class="room">
+        <section class="index-slideshow">
+            <div class="fotorama">
+            @foreach($images as $image)
+            <?php
+                $imageLinks['image'] = '#';
+                if(!empty($image->image)):
+                    $imageLinks = json_decode($image->image,TRUE);
+                endif;
+            ?>
+                <a href="{{url(@$imageLinks['image'])}}"></a>
+            @endforeach
+            </div>
+        </section>
+    </section>
+@elseif(!empty($news->image))
     <section class="room">
         <section class="index-slideshow valentine-slide">
             <div class="fotorama" data-autoplay="5000" data-loop="true" data-fit="cover">
@@ -18,7 +34,7 @@
             </div>
         </section>
     </section>
-    @endif
+@endif
     <section class="clearfix">
         <div class="restaurant">
             <div class="waves">
@@ -35,6 +51,7 @@
     @include('users_interface.includes.footer')
 </article>
 @include('users_interface.includes.scripts')
+{{HTML::script('js/vendor/fotorama.js');}}
 @include('users_interface.includes.typekit')
 @include('users_interface.includes.analytics')
 </body>

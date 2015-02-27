@@ -129,6 +129,9 @@ class ImagesController extends BaseController {
 				$item = Action::findOrFail($item_id);
 				$item->title = $item->name;
 				break;
+            case 'news':
+				$item = News::findOrFail($item_id);
+				break;
 			default: $model = new Page;
 				$item = $model::findOrFail($item_id);
 				$item->title = $item->page_title;
