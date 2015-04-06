@@ -758,7 +758,7 @@ table.prices-table th {
 .htg-header-pict.plane { width: 60px; background: url(../img/sloboda_sprite.png) -22px -402px no-repeat; }
 .htg-header-pict.train { width: 38px; background: url(../img/sloboda_sprite.png) -108px -402px no-repeat; }
 .htg-header-pict.car { width: 70px; background: url(../img/sloboda_sprite.png) -171px -402px no-repeat; }
-.how-to-get-header { margin: 2.5em 0 0.5em; border-top: 2px groove #FFF3E5; text-align: center; }
+.how-to-get-header { margin: 3.5em auto 0.5em; border-top: 2px groove #FFF3E5; text-align: center; }
 .how-to-get-header > span { position: relative; top: -24px; display: inline-block; padding: 0 3%; background: url("../img/texture.gif"); font: 1.5em 'jaf-zalamander',sans-serif; text-align: center; text-transform: uppercase; }
 /*-------------------------------Section reviews-------------------------------- */
 .review { max-width: 980px; margin: 0 auto; }
