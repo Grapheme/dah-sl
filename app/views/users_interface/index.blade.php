@@ -86,7 +86,7 @@
 						<div class="offers-link wo-line-link"><span class="dec-arrow"></span>Услуги</div>
 					</div>
 				</li>
-				<li class="offers-item actions">
+				<!-- <li class="offers-item actions">
 					<a class="index-banner-link" href="{{url('actions');}}"></a>
 					<div class="offers-bg">
 						{{ HTML::image('img/offers/11.jpg') }}
@@ -100,6 +100,26 @@
 							<br>
 							в Даховской<br>
 							слободе</h2>
+						</div>
+					</div>
+					<div class="wo-line-link-container">
+						<div class="offers-link wo-line-link"><span class="dec-arrow"></span>Акции</div>
+					</div>
+				</li> -->
+				<li class="offers-item actions">
+					<a class="index-banner-link" href="{{url('actions');}}"></a>
+					<div class="offers-bg">
+						{{ HTML::image('img/offers/may.jpg') }}
+					</div>
+					<div class="offers-cont">
+						<div class="top-line"></div>
+						<div class="offers-item-cont">
+							<h2 class="offers-header">
+								<span class="caps">МАЙСКИЕ</span><br>
+								<span class="caps">ПРАЗДНИКИ</span><br>
+								в Даховской<br>
+								Слободе<br>
+							</h2>
 						</div>
 					</div>
 					<div class="wo-line-link-container">
