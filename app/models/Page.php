@@ -18,6 +18,7 @@ class Page extends Eloquent {
 	}
 	
 	public static function getField($field,$url = 'home'){
+
 		if(!Request::is('/')):
 			if($segments = Request::segments()):
 				$url = array_pop($segments);

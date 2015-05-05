@@ -112,8 +112,6 @@ class GuestController extends BaseController {
 		if (is_null($news)):
 			App::abort(404);
 		endif;
-//        print_r($images->toArray());
-//        exit;
 		return View::make('users_interface.news',compact('news','images'));
 	}
 
